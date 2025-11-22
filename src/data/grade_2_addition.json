@@ -1,0 +1,32 @@
+[
+    {
+        "id": "g2_vert_1",
+        "type": "addition",
+        "question": "Add the numbers.",
+        "answer": 45,
+        "engine": "vertical",
+        "data": {
+            "operands": [
+                23,
+                22
+            ]
+        },
+        "difficulty": 1,
+        "grade": "2"
+    },
+    {
+        "id": "g2_vert_2",
+        "type": "addition",
+        "question": "Add the numbers.",
+        "answer": 82,
+        "engine": "vertical",
+        "data": {
+            "operands": [
+                45,
+                37
+            ]
+        },
+        "difficulty": 2,
+        "grade": "2"
+    }
+]

@@ -1,0 +1,43 @@
+[
+  { "id": "g3_d1", "grade": "3", "skillCode": "D.1", "prompt": "Estimate by rounding to nearest ten.", "engine": "equation", "data": { "equation": "487 + 312 ≈ ?" }, "answer": 800, "difficulty": 1 },
+  { "id": "g3_d2", "grade": "3", "skillCode": "D.2", "prompt": "Use compatible numbers to estimate.", "engine": "equation", "data": { "equation": "198 + 302 ≈ ?" }, "answer": 500, "difficulty": 1 },
+  { "id": "g3_d3", "grade": "3", "skillCode": "D.3", "prompt": "Word problem: 438 red beads and 261 blue beads. Estimate total (round to nearest hundred).", "engine": "equation", "data": { "equation": "438 + 261 ≈ ?" }, "answer": 700, "difficulty": 2 },
+
+  { "id": "g3_g1", "grade": "3", "skillCode": "G.1", "prompt": "Add on the number line.", "engine": "numberLine", "data": { "start": 0, "end": 700, "step": 50, "operands": [240, 180] }, "answer": 420, "difficulty": 1 },
+  { "id": "g3_g2", "grade": "3", "skillCode": "G.2", "prompt": "Use compensation to add.", "engine": "equation", "data": { "equation": "368 + 199 = ?" }, "answer": 567, "difficulty": 2 },
+  { "id": "g3_g3", "grade": "3", "skillCode": "G.3", "prompt": "Add using expanded form.", "engine": "equation", "data": { "equation": "(300 + 40 + 5) + (200 + 10 + 6) = ?" }, "answer": 561, "difficulty": 1 },
+  { "id": "g3_g4", "grade": "3", "skillCode": "G.4", "prompt": "Add (no regrouping).", "engine": "vertical", "data": { "operands": [123, 234] }, "answer": 357, "difficulty": 1 },
+  { "id": "g3_g5", "grade": "3", "skillCode": "G.5", "prompt": "Add (with regrouping).", "engine": "vertical", "data": { "operands": [478, 256] }, "answer": 734, "difficulty": 2 },
+  { "id": "g3_g6", "grade": "3", "skillCode": "G.6", "prompt": "Add two 3-digit numbers.", "engine": "vertical", "data": { "operands": [320, 415] }, "answer": 735, "difficulty": 1 },
+  { "id": "g3_g7", "grade": "3", "skillCode": "G.7", "prompt": "Word problem: 560 books plus 240 books.", "engine": "equation", "data": { "equation": "560 + 240 = ?" }, "answer": 800, "difficulty": 1 },
+  { "id": "g3_g8", "grade": "3", "skillCode": "G.8", "prompt": "Complete the addition sentence.", "engine": "equation", "data": { "equation": "306 + 129 = ?" }, "answer": 435, "difficulty": 1 },
+  { "id": "g3_g9", "grade": "3", "skillCode": "G.9", "prompt": "Balance the equation.", "engine": "equation", "data": { "equation": "345 + 120 = 300 + ?" }, "answer": 165, "difficulty": 2 },
+  { "id": "g3_g10", "grade": "3", "skillCode": "G.10", "prompt": "Fill in the missing digits: 4_7 + 2_5 = 702. What digit goes in each blank?", "engine": "equation", "data": { "equation": "4?7 + 2?5 = 702" }, "answer": "8,0", "difficulty": 3 },
+  { "id": "g3_g11", "grade": "3", "skillCode": "G.11", "prompt": "Add three 3-digit numbers.", "engine": "vertical", "data": { "operands": [125, 230, 145] }, "answer": 500, "difficulty": 2 },
+  { "id": "g3_g12", "grade": "3", "skillCode": "G.12", "prompt": "Word problem: 320 m + 215 m + 90 m.", "engine": "equation", "data": { "equation": "320 + 215 + 90 = ?" }, "answer": 625, "difficulty": 2 },
+
+  { "id": "g3_i1", "grade": "3", "skillCode": "I.1", "prompt": "Pattern over place values.", "engine": "equation", "data": { "equation": "120 + 30 = 150, 220 + 30 = ?" }, "answer": 250, "difficulty": 1 },
+  { "id": "g3_i2", "grade": "3", "skillCode": "I.2", "prompt": "Add two 4-digit numbers.", "engine": "vertical", "data": { "operands": [2345, 1250] }, "answer": 3595, "difficulty": 2 },
+  { "id": "g3_i3", "grade": "3", "skillCode": "I.3", "prompt": "Word problem: 3200 + 1450.", "engine": "equation", "data": { "equation": "3200 + 1450 = ?" }, "answer": 4650, "difficulty": 2 },
+  { "id": "g3_i4", "grade": "3", "skillCode": "I.4", "prompt": "Complete the addition sentence.", "engine": "equation", "data": { "equation": "4800 + 375 = ?" }, "answer": 5175, "difficulty": 2 },
+  { "id": "g3_i5", "grade": "3", "skillCode": "I.5", "prompt": "Fill in the sum.", "engine": "equation", "data": { "equation": "2500 + 340 = ?" }, "answer": 2840, "difficulty": 1 },
+  { "id": "g3_i6", "grade": "3", "skillCode": "I.6", "prompt": "Add three numbers up to 4 digits each.", "engine": "vertical", "data": { "operands": [1200, 345, 789] }, "answer": 2334, "difficulty": 2 },
+  { "id": "g3_i7", "grade": "3", "skillCode": "I.7", "prompt": "Word problem: 1500 + 1200 + 450.", "engine": "equation", "data": { "equation": "1500 + 1200 + 450 = ?" }, "answer": 3150, "difficulty": 2 },
+  { "id": "g3_i8", "grade": "3", "skillCode": "I.8", "prompt": "Add two numbers up to five digits.", "engine": "vertical", "data": { "operands": [12345, 2406] }, "answer": 14751, "difficulty": 3 },
+
+  { "id": "g3_k1", "grade": "3", "skillCode": "K.1", "prompt": "Relate addition and subtraction.", "engine": "equation", "data": { "equation": "450 - 120 = 330, so 330 + 120 = ?" }, "answer": 450, "difficulty": 1 },
+  { "id": "g3_k2", "grade": "3", "skillCode": "K.2", "prompt": "Add and subtract on the number line.", "engine": "numberLine", "data": { "start": 0, "end": 500, "step": 50, "operands": [300, 150, -50] }, "answer": 400, "difficulty": 2 },
+  { "id": "g3_k3", "grade": "3", "skillCode": "K.3", "prompt": "Use compensation to add or subtract.", "engine": "equation", "data": { "equation": "(400 + 75) - 25 = ?" }, "answer": 450, "difficulty": 2 },
+  { "id": "g3_k4", "grade": "3", "skillCode": "K.4", "prompt": "Add and subtract 3-digit numbers.", "engine": "equation", "data": { "equation": "620 + 180 - 90 = ?" }, "answer": 710, "difficulty": 2 },
+
+  { "id": "g3_l1", "grade": "3", "skillCode": "L.1", "prompt": "Commutative property.", "engine": "properties", "data": { "property": "Commutative", "original": "235 + 410", "transformed": "410 + 235" }, "answer": "410+235", "difficulty": 1 },
+  { "id": "g3_l2", "grade": "3", "skillCode": "L.2", "prompt": "Associative property.", "engine": "properties", "data": { "property": "Associative", "original": "(120 + 30) + 50", "transformed": "120 + (30 + 50)" }, "answer": "120+(30+50)", "difficulty": 2 },
+  { "id": "g3_l3", "grade": "3", "skillCode": "L.3", "prompt": "Add using properties.", "engine": "equation", "data": { "equation": "400 + 275 = ?" }, "answer": 675, "difficulty": 1 },
+
+  { "id": "g3_n1", "grade": "3", "skillCode": "N.1", "prompt": "Identify repeated addition for equal groups.", "engine": "array", "data": { "rows": 3, "cols": 4, "icon": "★" }, "answer": "4+4+4", "difficulty": 1 },
+  { "id": "g3_n2", "grade": "3", "skillCode": "N.2", "prompt": "Write an addition sentence for equal groups.", "engine": "array", "data": { "rows": 2, "cols": 6, "icon": "★" }, "answer": "6+6", "difficulty": 1 },
+  { "id": "g3_n13", "grade": "3", "skillCode": "N.13", "prompt": "Relate addition and multiplication.", "engine": "array", "data": { "rows": 5, "cols": 3, "icon": "★" }, "answer": "3+3+3+3+3", "difficulty": 1 },
+
+  { "id": "g3_zz9", "grade": "3", "skillCode": "ZZ.9", "prompt": "Add the money amounts shown.", "engine": "money", "data": { "items": [ { "label": "$1 bill", "value": 1.0, "count": 2 }, { "label": "25¢ coin", "value": 0.25, "count": 3 }, { "label": "10¢ coin", "value": 0.10, "count": 1 } ] }, "answer": 3.05, "difficulty": 1 },
+  { "id": "g3_zz10", "grade": "3", "skillCode": "ZZ.10", "prompt": "Word problem: add the prices.", "engine": "equation", "data": { "equation": "$2.99 + $1.50 + $0.75 = ?" }, "answer": 5.24, "difficulty": 2 }
+]

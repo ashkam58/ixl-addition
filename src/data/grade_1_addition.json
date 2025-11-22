@@ -1,0 +1,26 @@
+[
+    {
+        "id": "g1_eq_1",
+        "type": "addition",
+        "question": "Complete the addition sentence.",
+        "answer": 7,
+        "engine": "equation",
+        "data": {
+            "equation": "3 + 4 = ?"
+        },
+        "difficulty": 1,
+        "grade": "1"
+    },
+    {
+        "id": "g1_eq_2",
+        "type": "addition",
+        "question": "Complete the addition sentence.",
+        "answer": 9,
+        "engine": "equation",
+        "data": {
+            "equation": "2 + ? = 11"
+        },
+        "difficulty": 2,
+        "grade": "1"
+    }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "g3_4digit_1",
+    "grade": "3",
+    "skillCode": "I.2",
+    "prompt": "Add the 4-digit numbers.",
+    "engine": "vertical",
+    "data": { "operands": [2345, 1250] },
+    "answer": 3595,
+    "difficulty": 2
+  },
+  {
+    "id": "g3_4digit_fill_1",
+    "grade": "3",
+    "skillCode": "I.5",
+    "prompt": "Fill in the sum.",
+    "engine": "equation",
+    "data": { "equation": "4800 + 375 = ?" },
+    "answer": 5175,
+    "difficulty": 2
+  },
+  {
+    "id": "g3_5digit_1",
+    "grade": "3",
+    "skillCode": "I.8",
+    "prompt": "Add two numbers up to five digits.",
+    "engine": "vertical",
+    "data": { "operands": [12345, 2406] },
+    "answer": 14751,
+    "difficulty": 3
+  }
+]

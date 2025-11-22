@@ -1,0 +1,26 @@
+[
+    {
+        "id": "alg1_rat_1",
+        "type": "addition",
+        "question": "Solve for x.",
+        "answer": 10,
+        "engine": "equation",
+        "data": {
+            "equation": "x + 5 = 15"
+        },
+        "difficulty": 1,
+        "grade": "Algebra 1"
+    },
+    {
+        "id": "alg1_rat_2",
+        "type": "addition",
+        "question": "Solve for x.",
+        "answer": -3,
+        "engine": "equation",
+        "data": {
+            "equation": "2x + 4 = -2"
+        },
+        "difficulty": 2,
+        "grade": "Algebra 1"
+    }
+]

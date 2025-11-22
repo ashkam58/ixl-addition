@@ -1,0 +1,44 @@
+[
+    {
+        "id": "g6_K1_1",
+        "type": "addition",
+        "question": "Add fractions (like denominators).",
+        "prompt": "Add.",
+        "answer": "3/5",
+        "engine": "equation",
+        "data": {
+            "equation": "1/5 + 2/5 = ?"
+        },
+        "difficulty": 1,
+        "grade": "6",
+        "skillCode": "K.1"
+    },
+    {
+        "id": "g6_K3_1",
+        "type": "addition",
+        "question": "Add fractions (unlike denominators).",
+        "prompt": "Add.",
+        "answer": "5/6",
+        "engine": "equation",
+        "data": {
+            "equation": "1/2 + 1/3 = ?"
+        },
+        "difficulty": 2,
+        "grade": "6",
+        "skillCode": "K.3"
+    },
+    {
+        "id": "g6_K6_1",
+        "type": "addition",
+        "question": "Add mixed numbers.",
+        "prompt": "Add.",
+        "answer": "3 1/2",
+        "engine": "equation",
+        "data": {
+            "equation": "1 1/4 + 2 1/4 = ?"
+        },
+        "difficulty": 2,
+        "grade": "6",
+        "skillCode": "K.6"
+    }
+]

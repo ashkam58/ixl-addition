@@ -1,0 +1,90 @@
+[
+  {
+    "id": "g4_frac_1",
+    "grade": "4",
+    "skillCode": "G4_T1",
+    "prompt": "Add the fractions.",
+    "engine": "fractionsArea",
+    "data": {
+      "type": "likeDenominator",
+      "fractions": [
+        {
+          "num": 1,
+          "den": 4
+        },
+        {
+          "num": 2,
+          "den": 4
+        }
+      ]
+    },
+    "answer": "3/4",
+    "difficulty": 1
+  },
+  {
+    "id": "g4_frac_2",
+    "grade": "4",
+    "skillCode": "G4_T1",
+    "prompt": "Add the fractions.",
+    "engine": "fractionsArea",
+    "data": {
+      "type": "likeDenominator",
+      "fractions": [
+        {
+          "num": 3,
+          "den": 8
+        },
+        {
+          "num": 1,
+          "den": 8
+        }
+      ]
+    },
+    "answer": "4/8",
+    "difficulty": 1
+  },
+  {
+    "id": "g4_frac_3",
+    "grade": "4",
+    "skillCode": "G4_T1",
+    "prompt": "Add the fractions.",
+    "engine": "fractionsArea",
+    "data": {
+      "type": "likeDenominator",
+      "fractions": [
+        {
+          "num": 5,
+          "den": 12
+        },
+        {
+          "num": 4,
+          "den": 12
+        }
+      ]
+    },
+    "answer": "9/12",
+    "difficulty": 2
+  },
+  {
+    "id": "g4_frac_4",
+    "grade": "4",
+    "skillCode": "G4_T1",
+    "prompt": "Add the fractions.",
+    "engine": "fractionsArea",
+    "data": {
+      "type": "likeDenominator",
+      "fractions": [
+        {
+          "num": 2,
+          "den": 5
+        },
+        {
+          "num": 1,
+          "den": 5
+        }
+      ]
+    },
+    "answer": "3/5",
+    "difficulty": 1
+  }
+]

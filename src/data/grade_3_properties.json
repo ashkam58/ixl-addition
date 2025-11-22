@@ -1,0 +1,32 @@
+[
+  {
+    "id": "g3_prop_1",
+    "grade": "3",
+    "skillCode": "L.1",
+    "prompt": "Use the commutative property to rewrite.",
+    "engine": "properties",
+    "data": { "property": "Commutative", "original": "235 + 410", "transformed": "410 + 235" },
+    "answer": "410+235",
+    "difficulty": 1
+  },
+  {
+    "id": "g3_prop_2",
+    "grade": "3",
+    "skillCode": "L.2",
+    "prompt": "Complete the equation using the associative property.",
+    "engine": "properties",
+    "data": { "property": "Associative", "original": "(120 + 30) + 50", "transformed": "120 + (30 + 50)" },
+    "answer": "120+(30+50)",
+    "difficulty": 2
+  },
+  {
+    "id": "g3_prop_3",
+    "grade": "3",
+    "skillCode": "L.3",
+    "prompt": "Add using properties.",
+    "engine": "equation",
+    "data": { "equation": "400 + 275 = ?" },
+    "answer": 675,
+    "difficulty": 1
+  }
+]

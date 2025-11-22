@@ -1,0 +1,233 @@
+
+    [
+  {
+    "id": "q1",
+    "grade": "1",
+    "skillCode": "Add.1",
+    "prompt": "How many cubes in total?",
+    "difficulty": 1,
+    "engine": "cubes",
+    "data": { "addends": [2, 3], "maxTotal": 10 },
+    "answer": 5
+  },
+  {
+    "id": "q2",
+    "grade": "1",
+    "skillCode": "Add.1",
+    "prompt": "Add the red and blue cubes.",
+    "difficulty": 1,
+    "engine": "cubes",
+    "data": { "addends": [4, 1], "maxTotal": 10 },
+    "answer": 5
+  },
+  {
+    "id": "q3",
+    "grade": "1",
+    "skillCode": "Add.1",
+    "prompt": "Find the sum.",
+    "difficulty": 1,
+    "engine": "cubes",
+    "data": { "addends": [3, 4], "maxTotal": 10 },
+    "answer": 7
+  },
+  {
+    "id": "q4",
+    "grade": "1",
+    "skillCode": "Add.1",
+    "prompt": "Count all the cubes together.",
+    "difficulty": 1,
+    "engine": "cubes",
+    "data": { "addends": [5, 2], "maxTotal": 10 },
+    "answer": 7
+  },
+  {
+    "id": "q5",
+    "grade": "1",
+    "skillCode": "Add.1",
+    "prompt": "How many cubes are there?",
+    "difficulty": 2,
+    "engine": "cubes",
+    "data": { "addends": [6, 3], "maxTotal": 10 },
+    "answer": 9
+  },
+  {
+    "id": "q6",
+    "grade": "1",
+    "skillCode": "Add.1",
+    "prompt": "Add the cubes together.",
+    "difficulty": 2,
+    "engine": "cubes",
+    "data": { "addends": [5, 5], "maxTotal": 10 },
+    "answer": 10
+  },
+  {
+    "id": "q7",
+    "grade": "1",
+    "skillCode": "Add.1",
+    "prompt": "Find the total cubes.",
+    "difficulty": 2,
+    "engine": "cubes",
+    "data": { "addends": [7, 2], "maxTotal": 10 },
+    "answer": 9
+  },
+  {
+    "id": "q8",
+    "grade": "1",
+    "skillCode": "Add.1",
+    "prompt": "How many cubes in all?",
+    "difficulty": 2,
+    "engine": "cubes",
+    "data": { "addends": [8, 1], "maxTotal": 10 },
+    "answer": 9
+  },
+  {
+    "id": "q9",
+    "grade": "1",
+    "skillCode": "Add.1",
+    "prompt": "Add the cubes together.",
+    "difficulty": 3,
+    "engine": "cubes",
+    "data": { "addends": [9, 1], "maxTotal": 10 },
+    "answer": 10
+  },
+  {
+    "id": "q10",
+    "grade": "1",
+    "skillCode": "Add.1",
+    "prompt": "Count the cubes.",
+    "difficulty": 3,
+    "engine": "cubes",
+    "data": { "addends": [7, 3], "maxTotal": 10 },
+    "answer": 10
+  },
+  {
+    "id": "q11",
+    "grade": "1",
+    "skillCode": "Add.1",
+    "prompt": "Add the cubes together.",
+    "difficulty": 3,
+    "engine": "cubes",
+    "data": { "addends": [6, 6], "maxTotal": 12 },
+    "answer": 12
+  },
+  {
+    "id": "q12",
+    "grade": "1",
+    "skillCode": "Add.1",
+    "prompt": "How many cubes are there?",
+    "difficulty": 3,
+    "engine": "cubes",
+    "data": { "addends": [8, 5], "maxTotal": 15 },
+    "answer": 13
+  },
+  {
+    "id": "q13",
+    "grade": "1",
+    "skillCode": "Add.1",
+    "prompt": "Find the sum of cubes.",
+    "difficulty": 4,
+    "engine": "cubes",
+    "data": { "addends": [9, 6], "maxTotal": 15 },
+    "answer": 15
+  },
+  {
+    "id": "q14",
+    "grade": "1",
+    "skillCode": "Add.1",
+    "prompt": "Add the cubes together.",
+    "difficulty": 4,
+    "engine": "cubes",
+    "data": { "addends": [10, 5], "maxTotal": 15 },
+    "answer": 15
+  },
+  {
+    "id": "q15",
+    "grade": "1",
+    "skillCode": "Add.1",
+    "prompt": "Count all cubes.",
+    "difficulty": 4,
+    "engine": "cubes",
+    "data": { "addends": [7, 8], "maxTotal": 15 },
+    "answer": 15
+  },
+  {
+    "id": "q16",
+    "grade": "1",
+    "skillCode": "Add.1",
+    "prompt": "How many cubes in total?",
+    "difficulty": 4,
+    "engine": "cubes",
+    "data": { "addends": [9, 7], "maxTotal": 20 },
+    "answer": 16
+  },
+  {
+    "id": "q17",
+    "grade": "1",
+    "skillCode": "Add.1",
+    "prompt": "Add the cubes together.",
+    "difficulty": 5,
+    "engine": "cubes",
+    "data": { "addends": [10, 8], "maxTotal": 20 },
+    "answer": 18
+  },
+  {
+    "id": "q18",
+    "grade": "1",
+    "skillCode": "Add.1",
+    "prompt": "Find the sum.",
+    "difficulty": 5,
+    "engine": "cubes",
+    "data": { "addends": [12, 7], "maxTotal": 20 },
+    "answer": 19
+  },
+  {
+    "id": "q19",
+    "grade": "1",
+    "skillCode": "Add.1",
+    "prompt": "Count the cubes together.",
+    "difficulty": 5,
+    "engine": "cubes",
+    "data": { "addends": [11, 9], "maxTotal": 20 },
+    "answer": 20
+  },
+  {
+    "id": "q20",
+    "grade": "1",
+    "skillCode": "Add.1",
+    "prompt": "How many cubes are there?",
+    "difficulty": 5,
+    "engine": "cubes",
+    "data": { "addends": [13, 6], "maxTotal": 20 },
+    "answer": 19
+  },
+  {
+    "id": "q21",
+    "grade": "1",
+    "skillCode": "Add.1",
+    "prompt": "Add the cubes together.",
+    "difficulty": 6,
+    "engine": "cubes",
+    "data": { "addends": [14, 5], "maxTotal": 20 },
+    "answer": 19
+  },
+  {
+    "id": "q22",
+    "grade": "1",
+    "skillCode": "Add.1",
+    "prompt": "Find the total cubes.",
+    "difficulty": 6,
+    "engine": "cubes",
+    "data": { "addends": [15, 4], "maxTotal": 20 },
+    "answer": 19
+  },
+  {
+    "id": "q23",
+    "grade": "1",
+    "skillCode": "Add.1",
+    "prompt": "Count all cubes together.",
+    "difficulty": 6,
+    "engine": "cubes",
+    "data": { "addends": [16, 3], "maxTotal": 20 },
+    "answer": 19
+  }
+]

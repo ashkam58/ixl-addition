@@ -1,0 +1,22 @@
+[
+  {
+    "id": "g8_int_1",
+    "grade": "8",
+    "skillCode": "A.2",
+    "prompt": "Add the integers: -7 + 12 + (-5)",
+    "engine": "numberLine",
+    "data": { "start": -15, "end": 15, "step": 1, "operands": [-7, 12, -5] },
+    "answer": 0,
+    "difficulty": 2
+  },
+  {
+    "id": "g8_int_2",
+    "grade": "8",
+    "skillCode": "B.6",
+    "prompt": "Add the rational numbers.",
+    "engine": "equation",
+    "data": { "equation": "3/4 + (-5/8) = ?" },
+    "answer": "1/8",
+    "difficulty": 3
+  }
+]

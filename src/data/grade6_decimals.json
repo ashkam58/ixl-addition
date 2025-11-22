@@ -1,0 +1,47 @@
+[
+    {
+        "id": "g6_H1_1",
+        "type": "addition",
+        "question": "Add decimal numbers.",
+        "prompt": "Find the sum.",
+        "answer": 12.5,
+        "engine": "vertical",
+        "data": {
+            "addends": [
+                5.2,
+                7.3
+            ]
+        },
+        "difficulty": 1,
+        "grade": "6",
+        "skillCode": "H.1"
+    },
+    {
+        "id": "g6_H2_1",
+        "type": "addition",
+        "question": "Decimal word problem.",
+        "prompt": "Alice ran 3.5 miles on Monday and 4.2 miles on Tuesday. How many miles total?",
+        "answer": 7.7,
+        "engine": "equation",
+        "data": {
+            "equation": "3.5 + 4.2 = ?"
+        },
+        "difficulty": 1,
+        "grade": "6",
+        "skillCode": "H.2"
+    },
+    {
+        "id": "g6_H5_1",
+        "type": "addition",
+        "question": "Estimate the sum.",
+        "prompt": "Estimate: 4.8 + 5.1 (Round to nearest whole number)",
+        "answer": 10,
+        "engine": "equation",
+        "data": {
+            "equation": "5 + 5 = ?"
+        },
+        "difficulty": 1,
+        "grade": "6",
+        "skillCode": "H.5"
+    }
+]

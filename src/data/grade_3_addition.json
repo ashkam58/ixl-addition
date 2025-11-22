@@ -1,0 +1,15 @@
+[
+  {
+    "id": "g3_est_1",
+    "type": "addition",
+    "question": "Estimate the sum by rounding to the nearest ten.",
+    "prompt": "Estimate the sum by rounding to the nearest ten.",
+    "answer": 60,
+    "engine": "equation",
+    "data": {
+      "equation": "28 + 31 ~ ?"
+    },
+    "difficulty": 1,
+    "grade": "3"
+  }
+]

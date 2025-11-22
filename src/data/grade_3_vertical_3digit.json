@@ -1,0 +1,32 @@
+[
+  {
+    "id": "g3_vert_nr_1",
+    "grade": "3",
+    "skillCode": "G.4",
+    "prompt": "Add the 3-digit numbers (no regrouping).",
+    "engine": "vertical",
+    "data": { "operands": [123, 234] },
+    "answer": 357,
+    "difficulty": 1
+  },
+  {
+    "id": "g3_vert_r_1",
+    "grade": "3",
+    "skillCode": "G.5",
+    "prompt": "Add the 3-digit numbers (with regrouping).",
+    "engine": "vertical",
+    "data": { "operands": [478, 256] },
+    "answer": 734,
+    "difficulty": 2
+  },
+  {
+    "id": "g3_vert_fill_1",
+    "grade": "3",
+    "skillCode": "G.8",
+    "prompt": "Complete the addition sentence.",
+    "engine": "equation",
+    "data": { "equation": "306 + 129 = ?" },
+    "answer": 435,
+    "difficulty": 1
+  }
+]

@@ -1,0 +1,266 @@
+[
+    {
+        "id": "pk_sent_2",
+        "type": "selection",
+        "question": "Which model matches the sentence?",
+        "prompt": "Which model shows 3 + 1 = 4?",
+        "answer": "B",
+        "engine": "selection",
+        "data": {
+            "options": [
+                {
+                    "label": "A",
+                    "value": "A",
+                    "image": "🍌🍌 + 🍌🍌"
+                },
+                {
+                    "label": "B",
+                    "value": "B",
+                    "image": "🍌🍌🍌 + 🍌"
+                }
+            ]
+        },
+        "difficulty": 2,
+        "grade": "PK"
+    },
+    {
+        "id": "pk_sent_3",
+        "type": "selection",
+        "question": "Which model matches the sentence?",
+        "prompt": "Which model shows 1 + 2 = 3?",
+        "answer": "A",
+        "engine": "selection",
+        "data": {
+            "options": [
+                {
+                    "label": "A",
+                    "value": "A",
+                    "image": "⭐ + ⭐⭐"
+                },
+                {
+                    "label": "B",
+                    "value": "B",
+                    "image": "⭐⭐ + ⭐⭐"
+                }
+            ]
+        },
+        "difficulty": 2,
+        "grade": "PK"
+    },
+    {
+        "id": "pk_sent_4",
+        "type": "selection",
+        "question": "Which model matches the sentence?",
+        "prompt": "Which model shows 2 + 2 = 4?",
+        "answer": "B",
+        "engine": "selection",
+        "data": {
+            "options": [
+                {
+                    "label": "A",
+                    "value": "A",
+                    "image": "🍓🍓 + 🍓"
+                },
+                {
+                    "label": "B",
+                    "value": "B",
+                    "image": "🍓🍓 + 🍓🍓"
+                }
+            ]
+        },
+        "difficulty": 2,
+        "grade": "PK"
+    },
+    {
+        "id": "pk_sent_5",
+        "type": "selection",
+        "question": "Which model matches the sentence?",
+        "prompt": "Which model shows 4 + 1 = 5?",
+        "answer": "A",
+        "engine": "selection",
+        "data": {
+            "options": [
+                {
+                    "label": "A",
+                    "value": "A",
+                    "image": "🐟🐟🐟🐟 + 🐟"
+                },
+                {
+                    "label": "B",
+                    "value": "B",
+                    "image": "🐟🐟 + 🐟"
+                }
+            ]
+        },
+        "difficulty": 2,
+        "grade": "PK"
+    },
+    {
+        "id": "pk_sent_6",
+        "type": "selection",
+        "question": "Which model matches the sentence?",
+        "prompt": "Which model shows 3 + 2 = 5?",
+        "answer": "B",
+        "engine": "selection",
+        "data": {
+            "options": [
+                {
+                    "label": "A",
+                    "value": "A",
+                    "image": "🎈🎈 + 🎈"
+                },
+                {
+                    "label": "B",
+                    "value": "B",
+                    "image": "🎈🎈🎈 + 🎈🎈"
+                }
+            ]
+        },
+        "difficulty": 2,
+        "grade": "PK"
+    },
+    {
+        "id": "pk_sent_7",
+        "type": "selection",
+        "question": "Which model matches the sentence?",
+        "prompt": "Which model shows 5 + 1 = 6?",
+        "answer": "A",
+        "engine": "selection",
+        "data": {
+            "options": [
+                {
+                    "label": "A",
+                    "value": "A",
+                    "image": "🐻🐻🐻🐻🐻 + 🐻"
+                },
+                {
+                    "label": "B",
+                    "value": "B",
+                    "image": "🐻🐻🐻 + 🐻"
+                }
+            ]
+        },
+        "difficulty": 2,
+        "grade": "PK"
+    },
+    {
+        "id": "pk_sent_8",
+        "type": "selection",
+        "question": "Which model matches the sentence?",
+        "prompt": "Which model shows 4 + 2 = 6?",
+        "answer": "B",
+        "engine": "selection",
+        "data": {
+            "options": [
+                {
+                    "label": "A",
+                    "value": "A",
+                    "image": "🌸🌸🌸 + 🌸"
+                },
+                {
+                    "label": "B",
+                    "value": "B",
+                    "image": "🌸🌸🌸🌸 + 🌸🌸"
+                }
+            ]
+        },
+        "difficulty": 2,
+        "grade": "PK"
+    },
+    {
+        "id": "pk_sent_9",
+        "type": "selection",
+        "question": "Which model matches the sentence?",
+        "prompt": "Which model shows 2 + 3 = 5?",
+        "answer": "A",
+        "engine": "selection",
+        "data": {
+            "options": [
+                {
+                    "label": "A",
+                    "value": "A",
+                    "image": "🍭🍭 + 🍭🍭🍭"
+                },
+                {
+                    "label": "B",
+                    "value": "B",
+                    "image": "🍭 + 🍭🍭"
+                }
+            ]
+        },
+        "difficulty": 2,
+        "grade": "PK"
+    },
+    {
+        "id": "pk_sent_10",
+        "type": "selection",
+        "question": "Which model matches the sentence?",
+        "prompt": "Which model shows 6 + 1 = 7?",
+        "answer": "B",
+        "engine": "selection",
+        "data": {
+            "options": [
+                {
+                    "label": "A",
+                    "value": "A",
+                    "image": "🚗🚗🚗🚗 + 🚗"
+                },
+                {
+                    "label": "B",
+                    "value": "B",
+                    "image": "🚗🚗🚗🚗🚗🚗 + 🚗"
+                }
+            ]
+        },
+        "difficulty": 2,
+        "grade": "PK"
+    },
+    {
+        "id": "pk_sent_11",
+        "type": "selection",
+        "question": "Which model matches the sentence?",
+        "prompt": "Which model shows 1 + 4 = 5?",
+        "answer": "A",
+        "engine": "selection",
+        "data": {
+            "options": [
+                {
+                    "label": "A",
+                    "value": "A",
+                    "image": "🍦 + 🍦🍦🍦🍦"
+                },
+                {
+                    "label": "B",
+                    "value": "B",
+                    "image": "🍦🍦 + 🍦🍦"
+                }
+            ]
+        },
+        "difficulty": 2,
+        "grade": "PK"
+    },
+    {
+        "id": "pk_sent_12",
+        "type": "selection",
+        "question": "Which model matches the sentence?",
+        "prompt": "Which model shows 3 + 3 = 6?",
+        "answer": "B",
+        "engine": "selection",
+        "data": {
+            "options": [
+                {
+                    "label": "A",
+                    "value": "A",
+                    "image": "🐸🐸 + 🐸"
+                },
+                {
+                    "label": "B",
+                    "value": "B",
+                    "image": "🐸🐸🐸 + 🐸🐸🐸"
+                }
+            ]
+        },
+        "difficulty": 2,
+        "grade": "PK"
+    }
+]

@@ -1,0 +1,41 @@
+[
+    {
+        "id": "g1_word_1",
+        "type": "addition",
+        "question": "Solve the word problem.",
+        "prompt": "Sam has 3 toy cars. He gets 4 more. How many cars does he have now?",
+        "answer": 7,
+        "engine": "equation",
+        "data": {
+            "equation": "3 + 4 = ?"
+        },
+        "difficulty": 1,
+        "grade": "1"
+    },
+    {
+        "id": "g1_word_2",
+        "type": "addition",
+        "question": "Solve the word problem.",
+        "prompt": "There are 5 birds on a tree. 2 more fly in. How many birds are there?",
+        "answer": 7,
+        "engine": "equation",
+        "data": {
+            "equation": "5 + 2 = ?"
+        },
+        "difficulty": 1,
+        "grade": "1"
+    },
+    {
+        "id": "g1_word_3",
+        "type": "addition",
+        "question": "Solve the word problem.",
+        "prompt": "Mia baked 6 cookies. Her mom baked 4 more. How many cookies in total?",
+        "answer": 10,
+        "engine": "equation",
+        "data": {
+            "equation": "6 + 4 = ?"
+        },
+        "difficulty": 1,
+        "grade": "1"
+    }
+]

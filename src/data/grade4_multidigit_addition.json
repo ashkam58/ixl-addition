@@ -1,0 +1,47 @@
+[
+    {
+        "id": "g4_add_1",
+        "type": "addition",
+        "question": "Add the numbers.",
+        "answer": 579,
+        "engine": "vertical",
+        "data": {
+            "operands": [
+                123,
+                456
+            ]
+        },
+        "difficulty": 1,
+        "grade": "4"
+    },
+    {
+        "id": "g4_add_2",
+        "type": "addition",
+        "question": "Add the numbers.",
+        "answer": 1000,
+        "engine": "vertical",
+        "data": {
+            "operands": [
+                250,
+                750
+            ]
+        },
+        "difficulty": 2,
+        "grade": "4"
+    },
+    {
+        "id": "g4_add_3",
+        "type": "addition",
+        "question": "Add the numbers.",
+        "answer": 8415,
+        "engine": "vertical",
+        "data": {
+            "operands": [
+                3456,
+                4959
+            ]
+        },
+        "difficulty": 3,
+        "grade": "4"
+    }
+]

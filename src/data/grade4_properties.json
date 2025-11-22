@@ -1,0 +1,22 @@
+[
+  {
+    "id": "g4_prop_1",
+    "grade": "4",
+    "skillCode": "D.5",
+    "prompt": "Rewrite using the commutative property.",
+    "engine": "properties",
+    "data": { "property": "Commutative", "original": "7 + 15", "transformed": "15 + 7" },
+    "answer": "15+7",
+    "difficulty": 1
+  },
+  {
+    "id": "g4_prop_2",
+    "grade": "4",
+    "skillCode": "D.5",
+    "prompt": "Rewrite using the associative property.",
+    "engine": "properties",
+    "data": { "property": "Associative", "original": "(4 + 6) + 9", "transformed": "4 + (6 + 9)" },
+    "answer": "4+(6+9)",
+    "difficulty": 2
+  }
+]

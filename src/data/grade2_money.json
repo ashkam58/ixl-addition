@@ -1,0 +1,33 @@
+[
+  {
+    "id": "g2_money_1",
+    "grade": "2",
+    "skillCode": "BB.1",
+    "prompt": "Add the coins to find the total value.",
+    "engine": "money",
+    "data": {
+      "items": [
+        { "label": "5¢ coin", "value": 0.05, "count": 3 },
+        { "label": "10¢ coin", "value": 0.10, "count": 2 }
+      ]
+    },
+    "answer": 0.35,
+    "difficulty": 1
+  },
+  {
+    "id": "g2_money_2",
+    "grade": "2",
+    "skillCode": "BB.2",
+    "prompt": "Add the money amounts shown.",
+    "engine": "money",
+    "data": {
+      "items": [
+        { "label": "$1 bill", "value": 1.0, "count": 1 },
+        { "label": "25¢ coin", "value": 0.25, "count": 2 },
+        { "label": "10¢ coin", "value": 0.10, "count": 1 }
+      ]
+    },
+    "answer": 1.60,
+    "difficulty": 2
+  }
+]

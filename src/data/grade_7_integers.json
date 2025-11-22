@@ -1,0 +1,20 @@
+[
+    {
+        "id": "g7_int_1",
+        "type": "addition",
+        "question": "Find the sum using the number line.",
+        "answer": -5,
+        "engine": "numberLine",
+        "data": {
+            "start": -10,
+            "end": 10,
+            "step": 1,
+            "operands": [
+                -2,
+                -3
+            ]
+        },
+        "difficulty": 1,
+        "grade": "7"
+    }
+]

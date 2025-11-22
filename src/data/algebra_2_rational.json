@@ -1,0 +1,12 @@
+[
+  {
+    "id": "alg2_rat_1",
+    "grade": "Alg2",
+    "skillCode": "X.6",
+    "prompt": "Add the rational expressions.",
+    "engine": "equation",
+    "data": { "equation": "3x/(x+1) + 2x/(x+1) = ?" },
+    "answer": "5x/(x+1)",
+    "difficulty": 3
+  }
+]

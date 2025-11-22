@@ -1,0 +1,56 @@
+[
+    {
+        "id": "g6_int_1",
+        "type": "addition",
+        "question": "Use the number line to find the sum: 3 + (-5)",
+        "answer": -2,
+        "engine": "numberLine",
+        "data": {
+            "start": -10,
+            "end": 10,
+            "step": 1,
+            "operands": [
+                3,
+                -5
+            ]
+        },
+        "difficulty": 1,
+        "grade": "6"
+    },
+    {
+        "id": "g6_int_2",
+        "type": "addition",
+        "question": "Use the number line to find the sum: -2 + 6",
+        "answer": 4,
+        "engine": "numberLine",
+        "data": {
+            "start": -10,
+            "end": 10,
+            "step": 1,
+            "operands": [
+                -2,
+                6
+            ]
+        },
+        "difficulty": 1,
+        "grade": "6"
+    },
+    {
+        "id": "g6_int_3",
+        "type": "addition",
+        "question": "Use the number line to find the sum: -4 + (-3)",
+        "answer": -7,
+        "engine": "numberLine",
+        "data": {
+            "start": -10,
+            "end": 10,
+            "step": 1,
+            "operands": [
+                -4,
+                -3
+            ]
+        },
+        "difficulty": 2,
+        "grade": "6"
+    }
+]

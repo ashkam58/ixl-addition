@@ -1,0 +1,21 @@
+[
+    {
+        "id": "g6_Z2_1",
+        "type": "addition",
+        "question": "Properties of addition.",
+        "prompt": "Which property is shown?",
+        "answer": "Commutative",
+        "engine": "selection",
+        "data": {
+            "question": "3 + 5 = 5 + 3",
+            "options": [
+                "Commutative",
+                "Associative",
+                "Identity"
+            ]
+        },
+        "difficulty": 1,
+        "grade": "6",
+        "skillCode": "Z.2"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "id": "gk_cubes_1",
+        "type": "addition",
+        "question": "Add with cubes: 2 + 3",
+        "answer": 5,
+        "engine": "cubes",
+        "data": {
+            "addends": [
+                2,
+                3
+            ]
+        },
+        "difficulty": 1,
+        "grade": "K"
+    },
+    {
+        "id": "gk_cubes_2",
+        "type": "addition",
+        "question": "Add with cubes: 4 + 1",
+        "answer": 5,
+        "engine": "cubes",
+        "data": {
+            "addends": [
+                4,
+                1
+            ]
+        },
+        "difficulty": 1,
+        "grade": "K"
+    }
+]

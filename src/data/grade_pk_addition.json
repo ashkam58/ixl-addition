@@ -1,0 +1,32 @@
+[
+  {
+    "id": "pk_cubes_1",
+    "grade": "PK",
+    "skillCode": "V.1",
+    "prompt": "Put together the cubes.",
+    "engine": "cubes",
+    "data": { "addends": [2, 3] },
+    "answer": 5,
+    "difficulty": 1
+  },
+  {
+    "id": "pk_pics_1",
+    "grade": "PK",
+    "skillCode": "V.5",
+    "prompt": "Add with pictures in the frames.",
+    "engine": "tenFrame",
+    "data": { "frames": [4, 3] },
+    "answer": 7,
+    "difficulty": 1
+  },
+  {
+    "id": "pk_words_1",
+    "grade": "PK",
+    "skillCode": "V.8",
+    "prompt": "A bunny has 2 carrots and finds 1 more. How many carrots total?",
+    "engine": "equation",
+    "data": { "equation": "2 + 1 = ?" },
+    "answer": 3,
+    "difficulty": 1
+  }
+]

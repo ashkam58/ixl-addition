@@ -1,0 +1,53 @@
+[
+    {
+        "id": "g1_pics_1",
+        "type": "addition",
+        "question": "Add with pictures.",
+        "prompt": "How many smiley faces in all?",
+        "answer": 6,
+        "engine": "picture",
+        "data": {
+            "groups": [
+                3,
+                3
+            ],
+            "icon": "🙂"
+        },
+        "difficulty": 1,
+        "grade": "1"
+    },
+    {
+        "id": "g1_pics_2",
+        "type": "addition",
+        "question": "Add with pictures.",
+        "prompt": "How many hearts in all?",
+        "answer": 8,
+        "engine": "picture",
+        "data": {
+            "groups": [
+                5,
+                3
+            ],
+            "icon": "❤️"
+        },
+        "difficulty": 1,
+        "grade": "1"
+    },
+    {
+        "id": "g1_pics_3",
+        "type": "addition",
+        "question": "Add with pictures.",
+        "prompt": "How many stars in all?",
+        "answer": 10,
+        "engine": "picture",
+        "data": {
+            "groups": [
+                6,
+                4
+            ],
+            "icon": "⭐"
+        },
+        "difficulty": 1,
+        "grade": "1"
+    }
+]

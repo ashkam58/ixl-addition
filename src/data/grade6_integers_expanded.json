@@ -1,0 +1,87 @@
+[
+    {
+        "id": "g6_P1_1",
+        "type": "addition",
+        "question": "Add integers using counters.",
+        "prompt": "Use counters to add.",
+        "answer": 2,
+        "engine": "integerChips",
+        "data": {
+            "addends": [
+                5,
+                -3
+            ]
+        },
+        "difficulty": 1,
+        "grade": "6",
+        "skillCode": "P.1"
+    },
+    {
+        "id": "g6_P1_2",
+        "type": "addition",
+        "question": "Add integers using counters.",
+        "prompt": "Use counters to add.",
+        "answer": -4,
+        "engine": "integerChips",
+        "data": {
+            "addends": [
+                -2,
+                -2
+            ]
+        },
+        "difficulty": 1,
+        "grade": "6",
+        "skillCode": "P.1"
+    },
+    {
+        "id": "g6_P2_1",
+        "type": "addition",
+        "question": "Add integers using number line.",
+        "prompt": "Find the sum.",
+        "answer": 1,
+        "engine": "numberLine",
+        "data": {
+            "start": -2,
+            "steps": [
+                3
+            ],
+            "min": -5,
+            "max": 5
+        },
+        "difficulty": 1,
+        "grade": "6",
+        "skillCode": "P.2"
+    },
+    {
+        "id": "g6_P3_1",
+        "type": "addition",
+        "question": "Add integers.",
+        "prompt": "Add.",
+        "answer": -5,
+        "engine": "equation",
+        "data": {
+            "equation": "-2 + (-3) = ?"
+        },
+        "difficulty": 1,
+        "grade": "6",
+        "skillCode": "P.3"
+    },
+    {
+        "id": "g6_P7_1",
+        "type": "addition",
+        "question": "Find the sign.",
+        "prompt": "Is the sum positive or negative?",
+        "answer": "Negative",
+        "engine": "selection",
+        "data": {
+            "question": "-10 + 5",
+            "options": [
+                "Positive",
+                "Negative"
+            ]
+        },
+        "difficulty": 1,
+        "grade": "6",
+        "skillCode": "P.7"
+    }
+]

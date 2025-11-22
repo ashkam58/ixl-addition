@@ -1,0 +1,33 @@
+[
+    {
+        "id": "g6_A1_1",
+        "type": "addition",
+        "question": "Add whole numbers.",
+        "prompt": "Find the sum.",
+        "answer": 12345,
+        "engine": "vertical",
+        "data": {
+            "addends": [
+                5678,
+                6667
+            ]
+        },
+        "difficulty": 1,
+        "grade": "6",
+        "skillCode": "A.1"
+    },
+    {
+        "id": "g6_A2_1",
+        "type": "addition",
+        "question": "Solve the word problem.",
+        "prompt": "A factory produced 1,200 cars in January and 1,500 in February. How many cars in total?",
+        "answer": 2700,
+        "engine": "equation",
+        "data": {
+            "equation": "1200 + 1500 = ?"
+        },
+        "difficulty": 1,
+        "grade": "6",
+        "skillCode": "A.2"
+    }
+]

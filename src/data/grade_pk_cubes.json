@@ -1,0 +1,34 @@
+[
+    {
+        "id": "pk_cubes_1",
+        "type": "addition",
+        "question": "Put together numbers using cubes.",
+        "prompt": "How many cubes are there in all?",
+        "answer": 3,
+        "engine": "cubes",
+        "data": {
+            "addends": [
+                1,
+                2
+            ]
+        },
+        "difficulty": 1,
+        "grade": "PK"
+    },
+    {
+        "id": "pk_cubes_2",
+        "type": "addition",
+        "question": "Put together numbers using cubes.",
+        "prompt": "How many cubes are there in all?",
+        "answer": 5,
+        "engine": "cubes",
+        "data": {
+            "addends": [
+                2,
+                3
+            ]
+        },
+        "difficulty": 1,
+        "grade": "PK"
+    }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "g3_nl_1",
+    "grade": "3",
+    "skillCode": "G.1",
+    "prompt": "Use the number line to add the 3-digit numbers.",
+    "engine": "numberLine",
+    "data": { "start": 0, "end": 700, "step": 50, "operands": [240, 180] },
+    "answer": 420,
+    "difficulty": 1
+  },
+  {
+    "id": "g3_nl_2",
+    "grade": "3",
+    "skillCode": "K.2",
+    "prompt": "Add on the number line using compensation.",
+    "engine": "numberLine",
+    "data": { "start": 0, "end": 800, "step": 50, "operands": [345, 120] },
+    "answer": 465,
+    "difficulty": 2
+  }
+]

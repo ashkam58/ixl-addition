@@ -1,0 +1,22 @@
+[
+  {
+    "id": "g3_arr_1",
+    "grade": "3",
+    "skillCode": "X.4",
+    "prompt": "Write an addition sentence for this array.",
+    "engine": "array",
+    "data": { "rows": 3, "cols": 4, "icon": "★" },
+    "answer": "4+4+4",
+    "difficulty": 1
+  },
+  {
+    "id": "g3_arr_2",
+    "grade": "3",
+    "skillCode": "X.5",
+    "prompt": "How many total stars are in the array?",
+    "engine": "array",
+    "data": { "rows": 2, "cols": 6, "icon": "★" },
+    "answer": 12,
+    "difficulty": 1
+  }
+]

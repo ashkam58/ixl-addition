@@ -1,0 +1,32 @@
+[
+  {
+    "id": "g3_est_1",
+    "grade": "3",
+    "skillCode": "D.1",
+    "prompt": "Estimate by rounding each addend to the nearest ten.",
+    "engine": "equation",
+    "data": { "equation": "487 + 312 ≈ ?" },
+    "answer": 800,
+    "difficulty": 1
+  },
+  {
+    "id": "g3_est_2",
+    "grade": "3",
+    "skillCode": "D.2",
+    "prompt": "Use compatible numbers to estimate the sum.",
+    "engine": "equation",
+    "data": { "equation": "198 + 302 ≈ ?" },
+    "answer": 500,
+    "difficulty": 1
+  },
+  {
+    "id": "g3_est_3",
+    "grade": "3",
+    "skillCode": "D.3",
+    "prompt": "Word problem: 438 red beads and 261 blue beads. Estimate the total by rounding to the nearest hundred.",
+    "engine": "equation",
+    "data": { "equation": "438 + 261 ≈ ?" },
+    "answer": 700,
+    "difficulty": 2
+  }
+]

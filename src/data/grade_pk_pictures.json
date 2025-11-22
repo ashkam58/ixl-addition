@@ -1,0 +1,36 @@
+[
+    {
+        "id": "pk_pics_1",
+        "type": "addition",
+        "question": "Add with pictures.",
+        "prompt": "How many apples are there in all?",
+        "answer": 4,
+        "engine": "picture",
+        "data": {
+            "groups": [
+                2,
+                2
+            ],
+            "icon": "🍎"
+        },
+        "difficulty": 1,
+        "grade": "PK"
+    },
+    {
+        "id": "pk_pics_2",
+        "type": "addition",
+        "question": "Add with pictures.",
+        "prompt": "How many stars are there in all?",
+        "answer": 5,
+        "engine": "picture",
+        "data": {
+            "groups": [
+                3,
+                2
+            ],
+            "icon": "⭐"
+        },
+        "difficulty": 1,
+        "grade": "PK"
+    }
+]

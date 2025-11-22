@@ -1,0 +1,32 @@
+[
+    {
+        "id": "g5_dec_1",
+        "type": "addition",
+        "question": "Add the decimal numbers.",
+        "answer": 5.7,
+        "engine": "vertical",
+        "data": {
+            "operands": [
+                2.5,
+                3.2
+            ]
+        },
+        "difficulty": 1,
+        "grade": "5"
+    },
+    {
+        "id": "g5_dec_2",
+        "type": "addition",
+        "question": "Add the decimal numbers.",
+        "answer": 10.25,
+        "engine": "vertical",
+        "data": {
+            "operands": [
+                4.75,
+                5.50
+            ]
+        },
+        "difficulty": 2,
+        "grade": "5"
+    }
+]

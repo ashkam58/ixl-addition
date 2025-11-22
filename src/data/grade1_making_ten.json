@@ -1,0 +1,47 @@
+[
+    {
+        "id": "g1_make10_1",
+        "type": "addition",
+        "question": "Make 10 to add.",
+        "prompt": "How many more to make 10?",
+        "answer": 2,
+        "engine": "tenFrame",
+        "data": {
+            "frames": [
+                8
+            ]
+        },
+        "difficulty": 1,
+        "grade": "1"
+    },
+    {
+        "id": "g1_make10_2",
+        "type": "addition",
+        "question": "Make 10 to add.",
+        "prompt": "How many more to make 10?",
+        "answer": 4,
+        "engine": "tenFrame",
+        "data": {
+            "frames": [
+                6
+            ]
+        },
+        "difficulty": 1,
+        "grade": "1"
+    },
+    {
+        "id": "g1_make10_3",
+        "type": "addition",
+        "question": "Make 10 to add.",
+        "prompt": "How many more to make 10?",
+        "answer": 1,
+        "engine": "tenFrame",
+        "data": {
+            "frames": [
+                9
+            ]
+        },
+        "difficulty": 1,
+        "grade": "1"
+    }
+]

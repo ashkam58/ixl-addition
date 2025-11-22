@@ -1,0 +1,22 @@
+[
+  {
+    "id": "g3_three_1",
+    "grade": "3",
+    "skillCode": "G.11",
+    "prompt": "Add three numbers up to three digits each.",
+    "engine": "vertical",
+    "data": { "operands": [125, 230, 145] },
+    "answer": 500,
+    "difficulty": 2
+  },
+  {
+    "id": "g3_three_2",
+    "grade": "3",
+    "skillCode": "G.12",
+    "prompt": "Word problem: Juan ran 320 m, 215 m, and 90 m this week. How far total?",
+    "engine": "equation",
+    "data": { "equation": "320 + 215 + 90 = ?" },
+    "answer": 625,
+    "difficulty": 2
+  }
+]

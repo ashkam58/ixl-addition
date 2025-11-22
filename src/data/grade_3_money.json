@@ -1,0 +1,28 @@
+[
+  {
+    "id": "g3_money_1",
+    "grade": "3",
+    "skillCode": "ZZ.9",
+    "prompt": "Add the money amounts shown.",
+    "engine": "money",
+    "data": {
+      "items": [
+        { "label": "$1 bill", "value": 1.0, "count": 2 },
+        { "label": "25¢ coin", "value": 0.25, "count": 3 },
+        { "label": "10¢ coin", "value": 0.10, "count": 1 }
+      ]
+    },
+    "answer": 3.05,
+    "difficulty": 1
+  },
+  {
+    "id": "g3_money_2",
+    "grade": "3",
+    "skillCode": "ZZ.10",
+    "prompt": "Word problem: Add the prices to find the total cost.",
+    "engine": "equation",
+    "data": { "equation": "$2.99 + $1.50 + $0.75 = ?" },
+    "answer": 5.24,
+    "difficulty": 2
+  }
+]
