@@ -109,7 +109,7 @@ export default function App() {
       // Persist to backend
       const uid = localStorage.getItem("additionLabUserId");
       if (uid) {
-        fetch(`http://localhost:4000/api/users/${uid}/subscribe`, {
+        fetch(`https://ixl-addition.onrender.com/api/users/${uid}/subscribe`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ plan: "pro" }),
@@ -138,7 +138,7 @@ export default function App() {
   useEffect(() => {
     async function ensureUser() {
       try {
-        const res = await fetch("http://localhost:4000/api/users/upsert", {
+        const res = await fetch("https://ixl-addition.onrender.com/api/users/upsert", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ name: userName || "Guest" }),
@@ -204,7 +204,7 @@ export default function App() {
       return;
     }
     try {
-      const res = await fetch(`http://localhost:4000/api/users/${userId}/subscribe`, {
+      const res = await fetch(`https://ixl-addition.onrender.com/api/users/${userId}/subscribe`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ plan: "pro" }),

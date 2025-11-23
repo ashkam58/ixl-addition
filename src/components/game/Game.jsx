@@ -157,7 +157,7 @@ export default function Game({ selectedSkill, userId }) {
 
   async function saveProgress(currentScore, totalAnswered) {
     try {
-      await fetch("http://localhost:4000/api/progress", {
+      await fetch("https://ixl-addition.onrender.com/api/progress", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

@@ -10,7 +10,7 @@ export default function AdModal({ onClose }) {
 
     try {
       // Call backend to create checkout session
-      const response = await fetch("http://localhost:4000/api/create-checkout-session", {
+      const response = await fetch("https://ixl-addition.onrender.com/api/create-checkout-session", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
