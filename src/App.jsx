@@ -282,6 +282,20 @@ export default function App() {
     }
   };
 
+  const handleLogout = () => {
+    setUserId(null);
+    setUserName("");
+    setIsSubscribed(false);
+    setPlanName("Free Plan");
+
+    localStorage.removeItem("additionLabUserId");
+    localStorage.removeItem("additionLabUser");
+    localStorage.removeItem("additionLabUserSub");
+
+    // Optional: Close dashboard if open
+    setShowDashboard(false);
+  };
+
   const [showDashboard, setShowDashboard] = useState(false);
 
   const handleNavButtonClick = () => {
@@ -301,9 +315,22 @@ export default function App() {
             <div>
               <div className="brand-title">Learning Labs</div>
               <div className="brand-sub">
-                <button className="auth-pill" onClick={() => setShowLoginModal(true)}>
-                  {userId ? `Hi, ${userName}!` : "Login / Sign Up"}
-                </button>
+                {userId ? (
+                  <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                    <span style={{ fontWeight: 800, fontSize: '18px' }}>Hi, {userName}!</span>
+                    <button
+                      className="auth-pill"
+                      onClick={handleLogout}
+                      style={{ fontSize: '13px', padding: '6px 14px', border: '2px solid rgba(255,255,255,0.6)' }}
+                    >
+                      Logout
+                    </button>
+                  </div>
+                ) : (
+                  <button className="auth-pill" onClick={() => setShowLoginModal(true)}>
+                    Login / Sign Up
+                  </button>
+                )}
               </div>
             </div>
           </div>
