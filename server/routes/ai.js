@@ -30,7 +30,11 @@ router.post('/generate', async (req, res) => {
         Topic: "${topic}" ${subtopic ? `- Subtopic: "${subtopic}"` : ''} (Grade: ${grade || 'Elementary'}).
 
         Please generate two things in a single JSON object:
-        1. "svg": A simple, cute, colorful, cartoon-style SVG code (string) illustrating this specific subtopic.
+        1. "svg": A clean, educational INFOGRAPHIC SVG code (string) explaining the concept of "${subtopic || topic}". 
+           - It should visually break down the steps or concept (e.g., if "Addition", show 2 apples + 3 apples = 5 apples).
+           - Use text labels inside the SVG to explain.
+           - Make it colorful, clear, and suitable for elementary students.
+           - Ensure it has a viewBox and is responsive.
         2. "game": An interactive mini-game configuration. Choose one of the following types based on what fits the topic best:
 
         TYPE A: "counter_adventure" (Best for addition, subtraction, counting, integers)
