@@ -45,4 +45,42 @@ router.post('/create-checkout-session', async (req, res) => {
     }
 });
 
+// POST /api/webhook
+router.post('/webhook', async (req, res) => {
+    const sig = req.headers['stripe-signature'];
+    let event;
+
+    try {
+        event = stripe.webhooks.constructEvent(req.rawBody, sig, process.env.STRIPE_WEBHOOK_SECRET);
+    } catch (err) {
+        console.error('Webhook Signature Error:', err.message);
+        return res.status(400).send(`Webhook Error: ${err.message}`);
+    }
+
+    // Handle the event
+    if (event.type === 'checkout.session.completed') {
+        const session = event.data.object;
+        const userId = session.metadata.userId;
+
+        console.log('Payment successful for user:', userId);
+
+        try {
+            const user = await User.findById(userId);
+            if (user) {
+                user.subscribed = true;
+                user.plan = 'pro'; // Or derive from priceId if multiple plans
+                await user.save();
+                console.log('User subscription updated:', user.email);
+            } else {
+                console.error('User not found for webhook:', userId);
+            }
+        } catch (err) {
+            console.error('Error updating user subscription:', err);
+            return res.status(500).json({ error: 'Failed to update user' });
+        }
+    }
+
+    res.json({ received: true });
+});
+
 module.exports = router;

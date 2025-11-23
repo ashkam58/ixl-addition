@@ -1,66 +1,66 @@
 import React from 'react';
 
-export default function SubscriptionDashboard({ isSubscribed, userName, onClose }) {
-    return (
-        <div className="dashboard-overlay">
-            <div className="dashboard-content">
-                <button className="dashboard-close" onClick={onClose}>×</button>
+export default function SubscriptionDashboard({ isSubscribed, userName, planName, onClose }) {
+  return (
+    <div className="dashboard-overlay">
+      <div className="dashboard-content">
+        <button className="dashboard-close" onClick={onClose}>×</button>
 
-                <div className="dashboard-header">
-                    <div className="avatar">
-                        {userName ? userName.charAt(0).toUpperCase() : 'U'}
-                    </div>
-                    <div className="user-info">
-                        <h3>{userName || 'Learner'}</h3>
-                        <span className={`status-badge ${isSubscribed ? 'pro' : 'free'}`}>
-                            {isSubscribed ? 'PRO MEMBER 💎' : 'FREE PLAN'}
-                        </span>
-                    </div>
-                </div>
+        <div className="dashboard-header">
+          <div className="avatar">
+            {userName ? userName.charAt(0).toUpperCase() : 'U'}
+          </div>
+          <div className="user-info">
+            <h3>{userName || 'Learner'}</h3>
+            <span className={`status-badge ${isSubscribed ? 'pro' : 'free'}`}>
+              {isSubscribed ? (planName || 'PRO MEMBER 💎') : 'FREE PLAN'}
+            </span>
+          </div>
+        </div>
 
-                <div className="dashboard-body">
-                    <h4>Your Eligibility</h4>
-                    <div className="eligibility-grid">
-                        <div className={`eligibility-item ${isSubscribed ? 'active' : ''}`}>
-                            <span className="icon">🔓</span>
-                            <div className="text">
-                                <strong>Unlimited Practice</strong>
-                                <p>Access all math skills without limits.</p>
-                            </div>
-                            {isSubscribed && <span className="check">✓</span>}
-                        </div>
-
-                        <div className={`eligibility-item ${isSubscribed ? 'active' : ''}`}>
-                            <span className="icon">🚀</span>
-                            <div className="text">
-                                <strong>Advanced Labs</strong>
-                                <p>Algebra, Geometry, and Physics labs.</p>
-                            </div>
-                            {isSubscribed && <span className="check">✓</span>}
-                        </div>
-
-                        <div className={`eligibility-item ${isSubscribed ? 'active' : ''}`}>
-                            <span className="icon">👩‍🏫</span>
-                            <div className="text">
-                                <strong>1:1 Live Classes</strong>
-                                <p>Eligible for discount on live sessions.</p>
-                            </div>
-                            {isSubscribed && <span className="check">✓</span>}
-                        </div>
-                    </div>
-
-                    {!isSubscribed && (
-                        <div className="upsell-box">
-                            <p>Upgrade to Pro to unlock everything!</p>
-                            {/* This button can trigger the AdModal/Payment flow */}
-                            <button className="upgrade-btn" onClick={() => window.location.reload()}>
-                                Upgrade Now
-                            </button>
-                        </div>
-                    )}
-                </div>
+        <div className="dashboard-body">
+          <h4>Your Eligibility</h4>
+          <div className="eligibility-grid">
+            <div className={`eligibility-item ${isSubscribed ? 'active' : ''}`}>
+              <span className="icon">🔓</span>
+              <div className="text">
+                <strong>Unlimited Practice</strong>
+                <p>Access all math skills without limits.</p>
+              </div>
+              {isSubscribed && <span className="check">✓</span>}
             </div>
-            <style>{`
+
+            <div className={`eligibility-item ${isSubscribed ? 'active' : ''}`}>
+              <span className="icon">🚀</span>
+              <div className="text">
+                <strong>Advanced Labs</strong>
+                <p>Algebra, Geometry, and Physics labs.</p>
+              </div>
+              {isSubscribed && <span className="check">✓</span>}
+            </div>
+
+            <div className={`eligibility-item ${isSubscribed ? 'active' : ''}`}>
+              <span className="icon">👩‍🏫</span>
+              <div className="text">
+                <strong>1:1 Live Classes</strong>
+                <p>Eligible for discount on live sessions.</p>
+              </div>
+              {isSubscribed && <span className="check">✓</span>}
+            </div>
+          </div>
+
+          {!isSubscribed && (
+            <div className="upsell-box">
+              <p>Upgrade to Pro to unlock everything!</p>
+              {/* This button can trigger the AdModal/Payment flow */}
+              <button className="upgrade-btn" onClick={() => window.location.reload()}>
+                Upgrade Now
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+      <style>{`
         .dashboard-overlay {
           position: fixed;
           inset: 0;
@@ -191,6 +191,6 @@ export default function SubscriptionDashboard({ isSubscribed, userName, onClose 
           cursor: pointer;
         }
       `}</style>
-        </div>
-    );
+    </div>
+  );
 }

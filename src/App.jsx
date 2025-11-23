@@ -3,6 +3,7 @@ import Game from "./components/game/Game.jsx";
 import ErrorBoundary from "./components/ErrorBoundary.jsx";
 import AdModal from "./components/AdModal.jsx";
 import SubscriptionDashboard from "./components/SubscriptionDashboard.jsx";
+import LoginModal from "./components/LoginModal.jsx";
 import { skills as mathSkills } from "./data/skillsConfig.js";
 
 const subjects = [
@@ -84,6 +85,8 @@ export default function App() {
   const [showAd, setShowAd] = useState(false);
   const [nameInput, setNameInput] = useState("");
   const [showProModal, setShowProModal] = useState(false);
+  const [showLoginModal, setShowLoginModal] = useState(false);
+  const [planName, setPlanName] = useState("Free Plan");
 
   useEffect(() => {
     const storedName = localStorage.getItem("additionLabUser");
@@ -151,6 +154,7 @@ export default function App() {
           localStorage.setItem("additionLabUser", data.user.name);
           localStorage.setItem("additionLabUserSub", String(Boolean(data.user.subscribed)));
           setUserName(data.user.name);
+          setPlanName(data.user.plan === 'pro' ? 'Pro Plan' : 'Free Plan');
         }
       } catch (err) {
         console.warn("User sync failed", err);
@@ -200,7 +204,7 @@ export default function App() {
 
   const handleUpgrade = async () => {
     if (!userId) {
-      setShowProModal(true);
+      setShowLoginModal(true);
       return;
     }
     try {
@@ -217,6 +221,30 @@ export default function App() {
       }
     } catch (err) {
       console.warn("Upgrade failed", err);
+    }
+  };
+
+  const handleLogin = async (name, email) => {
+    try {
+      const res = await fetch("https://ixl-addition.onrender.com/api/users/upsert", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email }),
+      });
+      const data = await res.json();
+      if (data?.user) {
+        setUserId(data.user._id);
+        setUserName(data.user.name);
+        setIsSubscribed(Boolean(data.user.subscribed));
+        setPlanName(data.user.plan === 'pro' ? 'Pro Plan' : 'Free Plan');
+
+        localStorage.setItem("additionLabUserId", data.user._id);
+        localStorage.setItem("additionLabUser", data.user.name);
+        localStorage.setItem("additionLabUserSub", String(Boolean(data.user.subscribed)));
+      }
+    } catch (err) {
+      console.error("Login failed", err);
+      throw err;
     }
   };
 
@@ -239,7 +267,9 @@ export default function App() {
             <div>
               <div className="brand-title">Learning Labs</div>
               <div className="brand-sub">
-                Hi, {userName || "Learner"}!
+                <button className="login-link-btn" onClick={() => setShowLoginModal(true)}>
+                  {userId ? `Hi, ${userName}! (Switch)` : "Login / Sign Up"}
+                </button>
               </div>
             </div>
           </div>
@@ -374,12 +404,39 @@ export default function App() {
         <SubscriptionDashboard
           isSubscribed={isSubscribed}
           userName={userName}
+          planName={planName}
           onClose={() => setShowDashboard(false)}
+        />
+      )}
+
+      {showLoginModal && (
+        <LoginModal
+          onClose={() => setShowLoginModal(false)}
+          onLogin={handleLogin}
         />
       )}
     </div>
   );
 }
+
+// Add simple style for login link
+const style = document.createElement('style');
+style.textContent = `
+  .login-link-btn {
+    background: none;
+    border: none;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+    opacity: 0.9;
+  }
+  .login-link-btn:hover {
+    opacity: 1;
+  }
+`;
+document.head.appendChild(style);
 
 
 
