@@ -50,7 +50,7 @@ export default function AdModal({ onClose }) {
 
   return (
     <div className="ad-modal-overlay">
-      {/* <Confetti /> */}
+      <Confetti />
       <div className="ad-modal-content">
         <button className="ad-close-btn" onClick={onClose}>
           ×
