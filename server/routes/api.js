@@ -11,6 +11,64 @@ router.get('/questions', (req, res) => {
     res.json({ message: `Questions for Grade ${grade}, Skill ${skillId}` });
 });
 
+// POST /api/users/upsert
+router.post('/users/upsert', async (req, res) => {
+    try {
+        const { email, name } = req.body;
+        let user;
+
+        if (email) {
+            user = await User.findOne({ email });
+        }
+
+        if (!user && name) {
+            user = await User.findOne({ name, email: { $exists: false } });
+        }
+
+        if (!user) {
+            user = new User({ email, name });
+        } else {
+            if (name) user.name = name;
+            if (email) user.email = email;
+        }
+
+        await user.save();
+        res.json({ success: true, user });
+    } catch (err) {
+        console.error('--------------------------------------------------');
+        console.error('UPSERT ERROR:', err.message);
+        console.error('Full Error:', err);
+        console.error('--------------------------------------------------');
+        res.status(500).json({ error: 'Failed to upsert user' });
+    }
+});
+
+// GET /api/users/:id
+router.get('/users/:id', async (req, res) => {
+    try {
+        const user = await User.findById(req.params.id);
+        if (!user) return res.status(404).json({ error: 'User not found' });
+        res.json(user);
+    } catch (err) {
+        res.status(500).json({ error: 'Failed to fetch user' });
+    }
+});
+
+// POST /api/users/:id/subscribe
+router.post('/users/:id/subscribe', async (req, res) => {
+    try {
+        const { plan = 'pro' } = req.body;
+        const user = await User.findById(req.params.id);
+        if (!user) return res.status(404).json({ error: 'User not found' });
+        user.subscribed = true;
+        user.plan = plan;
+        await user.save();
+        res.json({ success: true, user });
+    } catch (err) {
+        res.status(500).json({ error: 'Failed to update subscription' });
+    }
+});
+
 // POST /api/progress
 router.post('/progress', async (req, res) => {
     try {
