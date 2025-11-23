@@ -11,9 +11,8 @@ const ProgressSchema = new mongoose.Schema({
 });
 
 // Update timestamp on save
-ProgressSchema.pre('save', function (next) {
+ProgressSchema.pre('save', async function () {
     this.updatedAt = Date.now();
-    next();
 });
 
 module.exports = mongoose.model('Progress', ProgressSchema);
