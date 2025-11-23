@@ -11,6 +11,51 @@ router.get('/questions', (req, res) => {
     res.json({ message: `Questions for Grade ${grade}, Skill ${skillId}` });
 });
 
+// POST /api/auth/signup
+router.post('/auth/signup', async (req, res) => {
+    try {
+        const { name, email, password } = req.body;
+
+        // Check if user exists
+        let user = await User.findOne({ email });
+        if (user) {
+            return res.status(400).json({ error: 'User already exists' });
+        }
+
+        // Create new user
+        user = new User({ name, email, password });
+        await user.save();
+
+        res.json({ success: true, user });
+    } catch (err) {
+        console.error('Signup Error:', err);
+        res.status(500).json({ error: 'Signup failed' });
+    }
+});
+
+// POST /api/auth/login
+router.post('/auth/login', async (req, res) => {
+    try {
+        const { email, password } = req.body;
+
+        // Find user
+        const user = await User.findOne({ email });
+        if (!user) {
+            return res.status(400).json({ error: 'Invalid credentials' });
+        }
+
+        // Check password (simple comparison for demo)
+        if (user.password !== password) {
+            return res.status(400).json({ error: 'Invalid credentials' });
+        }
+
+        res.json({ success: true, user });
+    } catch (err) {
+        console.error('Login Error:', err);
+        res.status(500).json({ error: 'Login failed' });
+    }
+});
+
 // POST /api/users/upsert
 router.post('/users/upsert', async (req, res) => {
     try {

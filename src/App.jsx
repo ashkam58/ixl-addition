@@ -224,14 +224,19 @@ export default function App() {
     }
   };
 
-  const handleLogin = async (name, email) => {
+  const handleLogin = async (email, password) => {
     try {
-      const res = await fetch("https://ixl-addition.onrender.com/api/users/upsert", {
+      const res = await fetch("https://ixl-addition.onrender.com/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email }),
+        body: JSON.stringify({ email, password }),
       });
       const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error || 'Login failed');
+      }
+
       if (data?.user) {
         setUserId(data.user._id);
         setUserName(data.user.name);
@@ -244,6 +249,35 @@ export default function App() {
       }
     } catch (err) {
       console.error("Login failed", err);
+      throw err;
+    }
+  };
+
+  const handleSignup = async (name, email, password) => {
+    try {
+      const res = await fetch("https://ixl-addition.onrender.com/api/auth/signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, password }),
+      });
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error || 'Signup failed');
+      }
+
+      if (data?.user) {
+        setUserId(data.user._id);
+        setUserName(data.user.name);
+        setIsSubscribed(Boolean(data.user.subscribed));
+        setPlanName(data.user.plan === 'pro' ? 'Pro Plan' : 'Free Plan');
+
+        localStorage.setItem("additionLabUserId", data.user._id);
+        localStorage.setItem("additionLabUser", data.user.name);
+        localStorage.setItem("additionLabUserSub", String(Boolean(data.user.subscribed)));
+      }
+    } catch (err) {
+      console.error("Signup failed", err);
       throw err;
     }
   };
@@ -267,8 +301,8 @@ export default function App() {
             <div>
               <div className="brand-title">Learning Labs</div>
               <div className="brand-sub">
-                <button className="login-link-btn" onClick={() => setShowLoginModal(true)}>
-                  {userId ? `Hi, ${userName}! (Switch)` : "Login / Sign Up"}
+                <button className="auth-pill" onClick={() => setShowLoginModal(true)}>
+                  {userId ? `Hi, ${userName}!` : "Login / Sign Up"}
                 </button>
               </div>
             </div>
@@ -413,30 +447,14 @@ export default function App() {
         <LoginModal
           onClose={() => setShowLoginModal(false)}
           onLogin={handleLogin}
+          onSignup={handleSignup}
         />
       )}
     </div>
   );
 }
 
-// Add simple style for login link
-const style = document.createElement('style');
-style.textContent = `
-  .login-link-btn {
-    background: none;
-    border: none;
-    color: white;
-    text-decoration: underline;
-    cursor: pointer;
-    font-size: 14px;
-    padding: 0;
-    opacity: 0.9;
-  }
-  .login-link-btn:hover {
-    opacity: 1;
-  }
-`;
-document.head.appendChild(style);
+
 
 
 

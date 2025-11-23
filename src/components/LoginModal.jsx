@@ -1,66 +1,105 @@
 import React, { useState } from 'react';
 
-export default function LoginModal({ onClose, onLogin }) {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [loading, setLoading] = useState(false);
+export default function LoginModal({ onClose, onLogin, onSignup }) {
+  const [isSignup, setIsSignup] = useState(false);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        if (!name.trim() || !email.trim()) return;
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError('');
+    if (!email.trim() || !password.trim()) return;
+    if (isSignup && !name.trim()) return;
 
-        setLoading(true);
-        try {
-            await onLogin(name, email);
-            onClose();
-        } catch (error) {
-            console.error("Login failed", error);
-            alert("Login failed. Please try again.");
-        } finally {
-            setLoading(false);
-        }
-    };
+    setLoading(true);
+    try {
+      if (isSignup) {
+        await onSignup(name, email, password);
+      } else {
+        await onLogin(email, password);
+      }
+      onClose();
+    } catch (err) {
+      console.error("Auth failed", err);
+      setError(err.message || "Authentication failed. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
-    return (
-        <div className="login-modal-overlay" onClick={onClose}>
-            <div className="login-modal-content" onClick={e => e.stopPropagation()}>
-                <button className="login-close-btn" onClick={onClose}>×</button>
+  return (
+    <div className="login-modal-overlay" onClick={onClose}>
+      <div className="login-modal-content" onClick={e => e.stopPropagation()}>
+        <button className="login-close-btn" onClick={onClose}>×</button>
 
-                <div className="login-header">
-                    <h2>Welcome Back! 👋</h2>
-                    <p>Enter your details to save your progress.</p>
-                </div>
+        <div className="login-header">
+          <h2>{isSignup ? 'Create Account' : 'Welcome Back'}</h2>
+          <p>{isSignup ? 'Start your learning journey today!' : 'Login to access your dashboard.'}</p>
+        </div>
 
-                <form onSubmit={handleSubmit}>
-                    <div className="form-group">
-                        <label>Name</label>
-                        <input
-                            type="text"
-                            value={name}
-                            onChange={(e) => setName(e.target.value)}
-                            placeholder="Your Name"
-                            required
-                        />
-                    </div>
+        <div className="auth-tabs">
+          <button
+            className={`tab-btn ${!isSignup ? 'active' : ''}`}
+            onClick={() => setIsSignup(false)}
+          >
+            Login
+          </button>
+          <button
+            className={`tab-btn ${isSignup ? 'active' : ''}`}
+            onClick={() => setIsSignup(true)}
+          >
+            Sign Up
+          </button>
+        </div>
 
-                    <div className="form-group">
-                        <label>Email</label>
-                        <input
-                            type="email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            placeholder="parent@example.com"
-                            required
-                        />
-                    </div>
+        {error && <div className="error-msg">{error}</div>}
 
-                    <button type="submit" className="login-submit-btn" disabled={loading}>
-                        {loading ? 'Signing in...' : 'Start Learning'}
-                    </button>
-                </form>
+        <form onSubmit={handleSubmit}>
+          {isSignup && (
+            <div className="form-group">
+              <label>Name</label>
+              <input
+                type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="Your Name"
+                required
+              />
             </div>
+          )}
 
-            <style>{`
+          <div className="form-group">
+            <label>Email</label>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="parent@example.com"
+              required
+            />
+          </div>
+
+          <div className="form-group">
+            <label>Password</label>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="••••••••"
+              required
+            />
+          </div>
+
+          <button type="submit" className="login-submit-btn" disabled={loading}>
+            {loading ? 'Processing...' : (isSignup ? 'Sign Up' : 'Login')}
+          </button>
+        </form>
+      </div>
+
+      <style>{`
         .login-modal-overlay {
           position: fixed;
           inset: 0;
@@ -109,6 +148,42 @@ export default function LoginModal({ onClose, onLogin }) {
         .login-header p {
           margin: 0;
           color: #64748b;
+        }
+
+        .auth-tabs {
+          display: flex;
+          background: #f1f5f9;
+          padding: 4px;
+          border-radius: 12px;
+          margin-bottom: 24px;
+        }
+
+        .tab-btn {
+          flex: 1;
+          padding: 10px;
+          border: none;
+          background: none;
+          border-radius: 8px;
+          font-weight: 600;
+          color: #64748b;
+          cursor: pointer;
+          transition: all 0.2s;
+        }
+
+        .tab-btn.active {
+          background: white;
+          color: #3b82f6;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .error-msg {
+          background: #fee2e2;
+          color: #ef4444;
+          padding: 10px;
+          border-radius: 8px;
+          margin-bottom: 16px;
+          font-size: 14px;
+          text-align: center;
         }
 
         .form-group {
@@ -169,6 +244,6 @@ export default function LoginModal({ onClose, onLogin }) {
           to { transform: translateY(0); opacity: 1; }
         }
       `}</style>
-        </div>
-    );
+    </div>
+  );
 }

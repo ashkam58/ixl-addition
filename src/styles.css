@@ -111,6 +111,32 @@ body {
   box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
+.auth-pill {
+  padding: 8px 20px;
+  border-radius: 999px;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 15px;
+  backdrop-filter: blur(4px);
+}
+
+.auth-pill:hover {
+  background: #ffffff;
+  color: #14a4ff;
+  border-color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.auth-pill:active {
+  transform: translateY(0);
+}
+
 .app-main {
   flex: 1;
   width: 80%;
@@ -666,8 +692,9 @@ body {
 }
 
 @media (max-width: 680px) {
+
   /* Styles for very small screens */
-  .header-top{
+  .header-top {
     flex-direction: column;
   }
 }
