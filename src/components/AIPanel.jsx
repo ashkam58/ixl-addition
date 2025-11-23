@@ -64,9 +64,9 @@ export default function AIPanel({ topic, subtopic, grade }) {
             {!loading && content && (
                 <>
                     {/* Section 1: Cartoon Illustration */}
-                    <div className="ai-illustration-section" style={{ background: 'white', padding: '30px', borderRadius: '24px', boxShadow: '0 8px 24px rgba(0,0,0,0.08)', border: '2px solid #e2e8f0' }}>
-                        <h2 style={{ marginTop: 0, marginBottom: '20px', color: '#1e1b2d', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                            <span>📊</span> {topic} Infographic
+                    <div className="ai-illustration-section" style={{ background: '#0f172a', padding: '30px', borderRadius: '24px', boxShadow: '0 8px 24px rgba(0,0,0,0.2)', border: '2px solid #334155' }}>
+                        <h2 style={{ marginTop: 0, marginBottom: '20px', color: '#e2e8f0', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                            <span>🚀</span> {topic} Mission Brief
                         </h2>
                         <div
                             className="svg-container"
