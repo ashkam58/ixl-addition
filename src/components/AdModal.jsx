@@ -67,7 +67,7 @@ export default function AdModal({ onClose }) {
             Master <strong>Coding</strong>, <strong>Rubik's Cube</strong>, <strong>Math</strong>, and more!
           </p>
           <p className="ad-subtext">
-            Join our 1:1 Live Classes for Speed Cubing, Python, Web Dev, and Scratch.
+            Join our 1:1 Live Classes for Mathematics, Speed Cubing, Python, Web Dev, and Scratch.
           </p>
 
           <div className="ad-features">
