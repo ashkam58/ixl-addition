@@ -30,12 +30,11 @@ export default function AdModal({ onClose }) {
       }
 
       // Redirect to Stripe Checkout
-      const result = await stripe.redirectToCheckout({
-        sessionId: session.sessionId,
-      });
-
-      if (result.error) {
-        alert(result.error.message);
+      if (session.url) {
+        window.location.href = session.url;
+      } else {
+        console.error("No checkout URL in session response", session);
+        alert("Could not initiate checkout. Please try again.");
         setLoading(false);
       }
     } catch (err) {
