@@ -68,11 +68,19 @@ export default function AIPanel({ topic, subtopic, grade }) {
                         <h2 style={{ marginTop: 0, marginBottom: '20px', color: '#e2e8f0', display: 'flex', alignItems: 'center', gap: '10px' }}>
                             <span>🚀</span> {topic} Mission Brief
                         </h2>
-                        <div
-                            className="svg-container"
-                            dangerouslySetInnerHTML={{ __html: content.svg }}
-                            style={{ width: '100%', maxHeight: '400px', display: 'flex', justifyContent: 'center', overflow: 'hidden' }}
-                        />
+                        {content.image ? (
+                            <img
+                                src={content.image}
+                                alt={`${topic} infographic`}
+                                style={{ width: '100%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.3)' }}
+                            />
+                        ) : (
+                            <div
+                                className="svg-container"
+                                dangerouslySetInnerHTML={{ __html: content.svg }}
+                                style={{ width: '100%', maxHeight: '400px', display: 'flex', justifyContent: 'center', overflow: 'hidden' }}
+                            />
+                        )}
                     </div>
 
                     {/* Section 2: AI Mini Game */}

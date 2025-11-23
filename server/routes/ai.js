@@ -25,70 +25,24 @@ router.post('/generate', async (req, res) => {
 
         console.log("Generating new content for:", topic, subtopic);
 
-        const prompt = `
-        You are a creative educational assistant for kids.
-        Topic: "${topic}" ${subtopic ? `- Subtopic: "${subtopic}"` : ''} (Grade: ${grade || 'Elementary'}).
+        // Parallel Generation: Game (Text) + Infographic (Image)
+        const [gameResult, imageResult] = await Promise.allSettled([
+            generateGameConfig(topic, subtopic, grade),
+            generateInfographicImage(topic, subtopic)
+        ]);
 
-        Please generate two things in a single JSON object:
-        1. "svg": A "Sci-Fi Cinematic" style INFOGRAPHIC SVG code (string).
-           - Theme: Futuristic, Space-age, High-Tech HUD interface.
-           - Colors: Dark background (deep blue/black), Neon accents (Cyan, Magenta, Lime), Glowing effects.
-           - Content: Visually explain the concept of "${subtopic || topic}" using futuristic elements (e.g., "2 robots + 3 robots = 5 robots").
-           - Style: Cartoon but polished, "Cinematic" lighting feel using gradients.
-           - Ensure it has a viewBox and is responsive.
-        2. "game": An interactive mini-game configuration. Choose one of the following types based on what fits the topic best:
+        const game = gameResult.status === 'fulfilled' ? gameResult.value : null;
+        const image = imageResult.status === 'fulfilled' ? imageResult.value : null;
 
-        TYPE A: "counter_adventure" (Best for addition, subtraction, counting, integers)
-        {
-          "type": "counter_adventure",
-          "story": "A short, fun instruction (e.g., 'Help the bunny collect 5 carrots!')",
-          "target": 5, (The number they need to reach)
-          "initial": 0, (Starting number)
-          "itemEmoji": "🥕", (Emoji to count)
-          "itemName": "carrot",
-          "winMessage": "Yay! You found them all!"
+        if (!game) {
+            throw new Error(gameResult.reason?.message || 'Failed to generate game');
         }
 
-        TYPE B: "quiz" (Best for logic, geometry, complex topics)
-        {
-          "type": "quiz",
-          "question": "...",
-          "options": ["..."],
-          "answer": "...",
-          "explanation": "..."
-        }
-
-        Return ONLY valid JSON.
-        `;
-
-        const response = await fetch(GEMINI_URL, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                contents: [{
-                    parts: [{ text: prompt }]
-                }]
-            })
-        });
-
-        const data = await response.json();
-
-        if (!response.ok) {
-            console.error('Gemini API Error:', data);
-            throw new Error(data.error?.message || 'Failed to fetch from Gemini');
-        }
-
-        const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
-
-        if (!text) {
-            throw new Error('No content generated');
-        }
-
-        // Clean up markdown if present
-        const jsonStr = text.replace(/```json/g, '').replace(/```/g, '').trim();
-        const result = JSON.parse(jsonStr);
+        const result = {
+            game: game,
+            image: image, // Base64 string
+            svg: null // Deprecated
+        };
 
         // 2. Save to Cache
         await AIContent.create({
@@ -110,5 +64,92 @@ router.post('/generate', async (req, res) => {
         res.status(500).json({ error: 'Failed to generate content', details: err.message });
     }
 });
+
+async function generateGameConfig(topic, subtopic, grade) {
+    const prompt = `
+    You are a creative educational assistant for kids.
+    Topic: "${topic}" ${subtopic ? `- Subtopic: "${subtopic}"` : ''} (Grade: ${grade || 'Elementary'}).
+
+    Generate an interactive mini-game configuration in JSON format.
+    Choose one of the following types:
+
+    TYPE A: "counter_adventure" (Best for addition, subtraction, counting)
+    {
+      "type": "counter_adventure",
+      "story": "Fun story...",
+      "target": 5,
+      "initial": 0,
+      "itemEmoji": "🥕",
+      "itemName": "carrot",
+      "winMessage": "Yay!"
+    }
+
+    TYPE B: "quiz" (Best for logic, geometry)
+    {
+      "type": "quiz",
+      "question": "...",
+      "options": ["..."],
+      "answer": "...",
+      "explanation": "..."
+    }
+
+    Return ONLY valid JSON.
+    `;
+
+    const response = await fetch(GEMINI_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            contents: [{ parts: [{ text: prompt }] }]
+        })
+    });
+
+    const data = await response.json();
+    if (!response.ok) throw new Error(data.error?.message || 'Gemini Text Error');
+
+    const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
+    if (!text) throw new Error('No text generated');
+
+    const jsonStr = text.replace(/```json/g, '').replace(/```/g, '').trim();
+    return JSON.parse(jsonStr);
+}
+
+async function generateInfographicImage(topic, subtopic) {
+    try {
+        // Using Imagen 3 (or Gemini 2.5 Flash Image if available)
+        // Note: The endpoint for Imagen on AI Studio is often different. 
+        // We'll try the standard v1beta predict endpoint for Imagen.
+        const IMAGEN_URL = `https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-001:predict?key=${GEMINI_API_KEY}`;
+
+        const prompt = `Cartoon sci-fi cinematic infographic explaining "${subtopic || topic}". 
+        Futuristic HUD interface, neon colors, dark background, glowing elements. 
+        Educational math concept visualization. High quality, detailed, 4k.`;
+
+        const response = await fetch(IMAGEN_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                instances: [{ prompt: prompt }],
+                parameters: { sampleCount: 1, aspectRatio: "16:9" }
+            })
+        });
+
+        const data = await response.json();
+        if (!response.ok) {
+            console.warn('Imagen API Error:', data);
+            return null; // Fallback to no image if fails
+        }
+
+        // Imagen returns base64 in predictions[0].bytesBase64Encoded
+        const base64 = data.predictions?.[0]?.bytesBase64Encoded;
+        if (base64) {
+            return `data:image/png;base64,${base64}`;
+        }
+        return null;
+    } catch (e) {
+        console.error("Image Gen Failed:", e);
+        return null;
+    }
+}
 
 module.exports = router;
