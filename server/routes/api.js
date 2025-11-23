@@ -18,7 +18,15 @@ router.post('/auth/signup', async (req, res) => {
 
         // Check if user exists
         let user = await User.findOne({ email });
+
         if (user) {
+            // If user exists but has no password (legacy guest account), allow "claiming" it
+            if (!user.password) {
+                user.name = name;
+                user.password = password;
+                await user.save();
+                return res.json({ success: true, user });
+            }
             return res.status(400).json({ error: 'User already exists' });
         }
 
@@ -42,6 +50,11 @@ router.post('/auth/login', async (req, res) => {
         const user = await User.findOne({ email });
         if (!user) {
             return res.status(400).json({ error: 'Invalid credentials' });
+        }
+
+        // If user has no password set (legacy account)
+        if (!user.password) {
+            return res.status(400).json({ error: 'Please use "Sign Up" to set a password for this account.' });
         }
 
         // Check password (simple comparison for demo)
