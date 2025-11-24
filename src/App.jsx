@@ -258,8 +258,29 @@ export default function App() {
       setIsSubscribed(storedSub === "true");
     }
 
-    // Check for Stripe success/cancel params
+    // Check for OAuth success or Stripe success params
     const query = new URLSearchParams(window.location.search);
+
+    // Handle OAuth callback
+    if (query.get("auth") === "success") {
+      fetch(`${API_URL}/api/auth/status`, { credentials: 'include' })
+        .then(res => res.json())
+        .then(data => {
+          if (data.authenticated && data.user) {
+            setUserId(data.user.id);
+            setUserName(data.user.name);
+            setIsSubscribed(Boolean(data.user.isPro));
+            setPlanName(data.user.isPro ? "Pro Plan" : "Free Plan");
+            localStorage.setItem("additionLabUserId", data.user.id);
+            localStorage.setItem("additionLabUser", data.user.name);
+            localStorage.setItem("additionLabUserSub", String(Boolean(data.user.isPro)));
+          }
+        })
+        .catch(err => console.error("Failed to check auth status", err));
+      window.history.replaceState({}, document.title, "/");
+    }
+
+    // Check for Stripe success/cancel params
     if (query.get("success")) {
       alert("Subscription successful! You are now a Pro member. 🎉");
       setIsSubscribed(true);
@@ -368,6 +389,7 @@ export default function App() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
+        credentials: 'include'
       });
       const data = await res.json();
 
@@ -400,6 +422,7 @@ export default function App() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, password }),
+        credentials: 'include'
       });
       const data = await res.json();
 
