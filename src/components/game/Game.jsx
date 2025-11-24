@@ -11,6 +11,17 @@ import PropertiesEngine from "../engines/PropertiesEngine.jsx";
 import PictureAdditionEngine from "../engines/PictureAdditionEngine.jsx";
 import SelectionEngine from "../engines/SelectionEngine.jsx";
 import IntegerChipsEngine from "../engines/IntegerChipsEngine.jsx";
+import ModelMatchEngine from "../engines/ModelMatchEngine.jsx";
+import EquationFillEngine from "../engines/EquationFillEngine.jsx";
+import FactEngine from "../engines/FactEngine.jsx";
+import MakeNumberEngine from "../engines/MakeNumberEngine.jsx";
+import AddThreeEngine from "../engines/AddThreeEngine.jsx";
+import WordProblemEngine from "../engines/WordProblemEngine.jsx";
+import WordProblemModelEngine from "../engines/WordProblemModelEngine.jsx";
+import WordProblemSentenceEngine from "../engines/WordProblemSentenceEngine.jsx";
+import FactFamilyEngine from "../engines/FactFamilyEngine.jsx";
+import EquationCheckEngine from "../engines/EquationCheckEngine.jsx";
+import PlaceValueAddEngine from "../engines/PlaceValueAddEngine.jsx";
 import Confetti from "../Confetti.jsx";
 
 // Static imports for data files
@@ -40,11 +51,15 @@ import g1Pics from "../../data/grade1_addition_pictures.json";
 import g1Word from "../../data/grade1_word_problems.json";
 import g1Make10 from "../../data/grade1_making_ten.json";
 import g1Doubles from "../../data/grade1_doubles.json";
+import g1Models from "../../data/g1_addition_models.json";
+import g1WordProblems from "../../data/g1_addition_word_problems.json";
+import g1PlaceValue from "../../data/g1_place_value_addition.json";
 import g6Whole from "../../data/grade6_whole_numbers.json";
 import g6Dec from "../../data/grade6_decimals.json";
 import g6Frac from "../../data/grade6_fractions.json";
 import g6IntExp from "../../data/grade6_integers_expanded.json";
 import g6Props from "../../data/grade6_properties.json";
+import engineCatalog from "../../data/engine_catalog.json";
 
 const DATA_FILES = {
   "grade4_fractions_addition.json": grade4Fractions,
@@ -73,17 +88,22 @@ const DATA_FILES = {
   "grade1_word_problems.json": g1Word,
   "grade1_making_ten.json": g1Make10,
   "grade1_doubles.json": g1Doubles,
+  "g1_addition_models.json": g1Models,
+  "g1_addition_word_problems.json": g1WordProblems,
+  "g1_place_value_addition.json": g1PlaceValue,
   "grade6_whole_numbers.json": g6Whole,
   "grade6_decimals.json": g6Dec,
   "grade6_fractions.json": g6Frac,
   "grade6_integers_expanded.json": g6IntExp,
   "grade6_properties.json": g6Props,
+  "engine_catalog.json": engineCatalog,
 };
 
 const ENGINE_COMPONENTS = {
   fractionsArea: FractionEngine,
   cubes: CubesEngine,
   numberLine: NumberLineEngine,
+  number_line: NumberLineEngine,
   vertical: VerticalAdditionEngine,
   equation: EquationEngine,
   tenFrame: TenFrameEngine,
@@ -93,6 +113,17 @@ const ENGINE_COMPONENTS = {
   picture: PictureAdditionEngine,
   selection: SelectionEngine,
   integerChips: IntegerChipsEngine,
+  model_match: ModelMatchEngine,
+  equation_fill: EquationFillEngine,
+  fact: FactEngine,
+  make_number: MakeNumberEngine,
+  add_three: AddThreeEngine,
+  word_problem: WordProblemEngine,
+  word_problem_model: WordProblemModelEngine,
+  word_problem_sentence: WordProblemSentenceEngine,
+  fact_family: FactFamilyEngine,
+  equation_check: EquationCheckEngine,
+  place_value_add: PlaceValueAddEngine,
 };
 
 function updateSmartScore(currentScore, difficulty, correct, streak) {

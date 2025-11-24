@@ -1,8 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 export default function NumberLineEngine({ data, onAnswer }) {
-    // data: { start: -10, end: 10, step: 1, operands: [3, -5], answer: -2 }
-    const { start = 0, end = 20, step = 1, operands = [] } = data;
+    // data: { start: 0, end: 10, step: 1, operands: [3, -5] }
+    const start = data?.start ?? 0;
+    const end = data?.end ?? data?.max ?? 20;
+    const step = data?.step ?? 1;
+    const operandList = Array.isArray(data?.operands) && data.operands.length
+        ? data.operands
+        : data?.jump !== undefined
+            ? [data.jump]
+            : Array.isArray(data?.jumps)
+                ? data.jumps
+                : [];
     const [selectedValue, setSelectedValue] = useState(null);
 
     // Calculate range and width
@@ -25,34 +34,16 @@ export default function NumberLineEngine({ data, onAnswer }) {
     // Handle click on tick
     const handleTickClick = (val) => {
         setSelectedValue(val);
-        // In this engine, clicking the number line *is* the input mechanism.
-        // We might want to let the parent know the "userAnswer" is this value.
-        // But Game.jsx expects text input usually. 
-        // For this specific engine, maybe we update a hidden input or just show the value?
-        // Let's assume Game.jsx will read 'userAnswer' from the input field, 
-        // so we should probably just display the selected value visually 
-        // and maybe auto-fill the input if we could, but Game.jsx controls that state.
-        // 
-        // Wait, Game.jsx controls `userAnswer`. 
-        // To make this interactive, I need to pass `setUserAnswer` down or 
-        // Game.jsx needs to handle custom events.
-        // 
-        // For now, I'll just render the visual. The user still types the answer in the main input.
-        // OR, I can dispatch a custom event? No, that's hacky.
-        // 
-        // Better: The user uses the number line to "work it out", then types the answer.
-        // This keeps it consistent with other engines.
+        if (onAnswer) {
+            onAnswer(String(val));
+        }
     };
 
     // Generate hops (arcs)
-    // We start at 0 (or the first operand? Usually 0 -> op1 -> op1+op2)
     const hops = [];
-    let currentPos = 0;
+    let currentPos = start;
 
-    // If we want to show the problem visually:
-    // Hop 1: 0 to Operand1
-    // Hop 2: Operand1 to Operand1+Operand2
-    operands.forEach((op, index) => {
+    operandList.forEach((op, index) => {
         const startVal = currentPos;
         const endVal = currentPos + op;
 

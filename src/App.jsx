@@ -4,7 +4,7 @@ import ErrorBoundary from "./components/ErrorBoundary.jsx";
 import AdModal from "./components/AdModal.jsx";
 import SubscriptionDashboard from "./components/SubscriptionDashboard.jsx";
 import LoginModal from "./components/LoginModal.jsx";
-import { skills as mathSkills } from "./data/skillsConfig.js";
+import { skillsByGrade as mathSkills } from "./data/skillsConfig.js";
 import AIPanel from "./components/AIPanel.jsx";
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000';

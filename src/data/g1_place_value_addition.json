@@ -1,0 +1,394 @@
+[
+  {
+    "id": "AA.8.1",
+    "grade": "1",
+    "skillCode": "AA.8",
+    "cluster": "Ways to make a number",
+    "engine": "equation",
+    "question": "Complete.",
+    "prompt": "3 tens + 4 ones = ?",
+    "data": {
+      "equation": "30 + 4 = ?"
+    },
+    "answer": "34",
+    "difficulty": 1
+  },
+  {
+    "id": "AA.9.1",
+    "grade": "1",
+    "skillCode": "AA.9",
+    "cluster": "Regroup tens/ones",
+    "engine": "equation",
+    "question": "Complete.",
+    "prompt": "1 ten + 14 ones = ?",
+    "data": {
+      "equation": "10 + 14 = ?"
+    },
+    "answer": "24",
+    "difficulty": 2
+  },
+  {
+    "id": "AA.10.1",
+    "grade": "1",
+    "skillCode": "AA.10",
+    "cluster": "Regroup tens/ones",
+    "engine": "equation",
+    "question": "Complete.",
+    "prompt": "2 tens + 15 ones = ?",
+    "data": {
+      "equation": "20 + 15 = ?"
+    },
+    "answer": "35",
+    "difficulty": 2
+  },
+  {
+    "id": "CC.1.1",
+    "grade": "1",
+    "skillCode": "CC.1",
+    "cluster": "Ten more or less",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "10 more than 20 is ?",
+    "data": {
+      "equation": "20 + 10 = ?"
+    },
+    "answer": "30",
+    "difficulty": 1
+  },
+  {
+    "id": "CC.2.1",
+    "grade": "1",
+    "skillCode": "CC.2",
+    "cluster": "Add/Sub ten",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "30 + 10 = ?",
+    "data": {
+      "equation": "30 + 10 = ?"
+    },
+    "answer": "40",
+    "difficulty": 1
+  },
+  {
+    "id": "CC.3.1",
+    "grade": "1",
+    "skillCode": "CC.3",
+    "cluster": "Add multiples of ten",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "20 + 20 = ?",
+    "data": {
+      "equation": "20 + 20 = ?"
+    },
+    "answer": "40",
+    "difficulty": 1
+  },
+  {
+    "id": "CC.5.1",
+    "grade": "1",
+    "skillCode": "CC.5",
+    "cluster": "Add/Sub multiples of ten",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "50 - 20 = ?",
+    "data": {
+      "equation": "50 - 20 = ?"
+    },
+    "answer": "30",
+    "difficulty": 2
+  },
+  {
+    "id": "DD.1.1",
+    "grade": "1",
+    "skillCode": "DD.1",
+    "cluster": "Add multiple of ten + one digit",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "40 + 5 = ?",
+    "data": {
+      "equation": "40 + 5 = ?"
+    },
+    "answer": "45",
+    "difficulty": 1
+  },
+  {
+    "id": "DD.2.1",
+    "grade": "1",
+    "skillCode": "DD.2",
+    "cluster": "Add multiple of ten + one digit",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "60 + 3 = ?",
+    "data": {
+      "equation": "60 + 3 = ?"
+    },
+    "answer": "63",
+    "difficulty": 1
+  },
+  {
+    "id": "DD.3.1",
+    "grade": "1",
+    "skillCode": "DD.3",
+    "cluster": "Add multiple of ten + two digit",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "20 + 15 = ?",
+    "data": {
+      "equation": "20 + 15 = ?"
+    },
+    "answer": "35",
+    "difficulty": 2
+  },
+  {
+    "id": "DD.4.1",
+    "grade": "1",
+    "skillCode": "DD.4",
+    "cluster": "Add multiple of ten + two digit",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "30 + 22 = ?",
+    "data": {
+      "equation": "30 + 22 = ?"
+    },
+    "answer": "52",
+    "difficulty": 2
+  },
+  {
+    "id": "DD.5.1",
+    "grade": "1",
+    "skillCode": "DD.5",
+    "cluster": "Add 2-digit + 1-digit no regroup",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "23 + 4 = ?",
+    "data": {
+      "equation": "23 + 4 = ?"
+    },
+    "answer": "27",
+    "difficulty": 2
+  },
+  {
+    "id": "DD.6.1",
+    "grade": "1",
+    "skillCode": "DD.6",
+    "cluster": "Add 2-digit + 1-digit no regroup",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "41 + 5 = ?",
+    "data": {
+      "equation": "41 + 5 = ?"
+    },
+    "answer": "46",
+    "difficulty": 2
+  },
+  {
+    "id": "DD.7.1",
+    "grade": "1",
+    "skillCode": "DD.7",
+    "cluster": "Hundred chart add",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "55 + 10 = ?",
+    "data": {
+      "equation": "55 + 10 = ?"
+    },
+    "answer": "65",
+    "difficulty": 2
+  },
+  {
+    "id": "DD.8.1",
+    "grade": "1",
+    "skillCode": "DD.8",
+    "cluster": "Hundred chart add regroup",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "18 + 5 = ?",
+    "data": {
+      "equation": "18 + 5 = ?"
+    },
+    "answer": "23",
+    "difficulty": 2
+  },
+  {
+    "id": "DD.9.1",
+    "grade": "1",
+    "skillCode": "DD.9",
+    "cluster": "Add 2-digit + 1-digit regroup",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "28 + 4 = ?",
+    "data": {
+      "equation": "28 + 4 = ?"
+    },
+    "answer": "32",
+    "difficulty": 3
+  },
+  {
+    "id": "DD.10.1",
+    "grade": "1",
+    "skillCode": "DD.10",
+    "cluster": "Add 2-digit + 1-digit regroup",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "37 + 5 = ?",
+    "data": {
+      "equation": "37 + 5 = ?"
+    },
+    "answer": "42",
+    "difficulty": 3
+  },
+  {
+    "id": "DD.11.1",
+    "grade": "1",
+    "skillCode": "DD.11",
+    "cluster": "Add 2-digit no regroup",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "22 + 13 = ?",
+    "data": {
+      "equation": "22 + 13 = ?"
+    },
+    "answer": "35",
+    "difficulty": 2
+  },
+  {
+    "id": "DD.12.1",
+    "grade": "1",
+    "skillCode": "DD.12",
+    "cluster": "Place value add 2-digit",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "40 + 20 + 5 + 3 = ?",
+    "data": {
+      "equation": "40 + 20 + 5 + 3 = ?"
+    },
+    "answer": "68",
+    "difficulty": 3
+  },
+  {
+    "id": "DD.13.1",
+    "grade": "1",
+    "skillCode": "DD.13",
+    "cluster": "Add 2-digit no regroup",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "51 + 24 = ?",
+    "data": {
+      "equation": "51 + 24 = ?"
+    },
+    "answer": "75",
+    "difficulty": 2
+  },
+  {
+    "id": "DD.14.1",
+    "grade": "1",
+    "skillCode": "DD.14",
+    "cluster": "Add 2-digit regroup",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "28 + 14 = ?",
+    "data": {
+      "equation": "28 + 14 = ?"
+    },
+    "answer": "42",
+    "difficulty": 3
+  },
+  {
+    "id": "DD.15.1",
+    "grade": "1",
+    "skillCode": "DD.15",
+    "cluster": "Place value add 2-digit regroup",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "30 + 20 + 8 + 4 = ?",
+    "data": {
+      "equation": "30 + 20 + 8 + 4 = ?"
+    },
+    "answer": "62",
+    "difficulty": 3
+  },
+  {
+    "id": "DD.16.1",
+    "grade": "1",
+    "skillCode": "DD.16",
+    "cluster": "Place value add",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "50 + 30 + 9 + 5 = ?",
+    "data": {
+      "equation": "50 + 30 + 9 + 5 = ?"
+    },
+    "answer": "94",
+    "difficulty": 3
+  },
+  {
+    "id": "DD.17.1",
+    "grade": "1",
+    "skillCode": "DD.17",
+    "cluster": "Add 2-digit regroup",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "45 + 27 = ?",
+    "data": {
+      "equation": "45 + 27 = ?"
+    },
+    "answer": "72",
+    "difficulty": 3
+  },
+  {
+    "id": "DD.18.1",
+    "grade": "1",
+    "skillCode": "DD.18",
+    "cluster": "Add numbers to 2-digit",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "12 + 34 = ?",
+    "data": {
+      "equation": "12 + 34 = ?"
+    },
+    "answer": "46",
+    "difficulty": 2
+  },
+  {
+    "id": "DD.19.1",
+    "grade": "1",
+    "skillCode": "DD.19",
+    "cluster": "Word problems 2-digit + 1-digit",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "25 books. Buy 4 more.",
+    "data": {
+      "equation": "25 + 4 = ?"
+    },
+    "answer": "29",
+    "difficulty": 2
+  },
+  {
+    "id": "DD.20.1",
+    "grade": "1",
+    "skillCode": "DD.20",
+    "cluster": "Sentences for word problems",
+    "engine": "equation",
+    "question": "Write sentence.",
+    "prompt": "30 plus 5.",
+    "data": {
+      "equation": "30 + 5 = ?"
+    },
+    "answer": "35",
+    "difficulty": 2
+  },
+  {
+    "id": "DD.21.1",
+    "grade": "1",
+    "skillCode": "DD.21",
+    "cluster": "Word problems 2-digit",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "20 boys. 22 girls. Total?",
+    "data": {
+      "equation": "20 + 22 = ?"
+    },
+    "answer": "42",
+    "difficulty": 2
+  }
+]

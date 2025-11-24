@@ -1,0 +1,185 @@
+[
+  {
+    "id": "ENG-1",
+    "grade": "1",
+    "skillCode": "ENG",
+    "cluster": "Cubes",
+    "engine": "cubes",
+    "question": "Add with cubes.",
+    "prompt": "How many cubes in all?",
+    "data": { "addends": [3, 4] },
+    "answer": 7,
+    "difficulty": 1
+  },
+  {
+    "id": "ENG-2",
+    "grade": "1",
+    "skillCode": "ENG",
+    "cluster": "Pictures",
+    "engine": "picture",
+    "question": "Add with pictures.",
+    "prompt": "Count the apples.",
+    "data": { "groups": [2, 5], "icon": "🍎", "mode": "sum" },
+    "answer": 7,
+    "difficulty": 1
+  },
+  {
+    "id": "ENG-3",
+    "grade": "1",
+    "skillCode": "ENG",
+    "cluster": "Model match",
+    "engine": "model_match",
+    "question": "Match the sentence to the model.",
+    "prompt": "Pick the matching model.",
+    "data": {
+      "promptType": "sentence_to_model",
+      "sentence": "3 + 4 = 7",
+      "options": [
+        { "label": "A", "model": { "groups": [3, 4], "icon": "★" }, "value": "A" },
+        { "label": "B", "model": { "groups": [2, 5], "icon": "★" }, "value": "B" }
+      ]
+    },
+    "answer": "A",
+    "difficulty": 1
+  },
+  {
+    "id": "ENG-4",
+    "grade": "1",
+    "skillCode": "ENG",
+    "cluster": "Number line",
+    "engine": "number_line",
+    "question": "Use the number line.",
+    "prompt": "Start at 3 and jump 4.",
+    "data": { "start": 3, "jump": 4, "max": 10 },
+    "answer": 7,
+    "difficulty": 1
+  },
+  {
+    "id": "ENG-5",
+    "grade": "1",
+    "skillCode": "ENG",
+    "cluster": "Equation fill",
+    "engine": "equation_fill",
+    "question": "Complete the sentence.",
+    "prompt": "__ + 7 = 10",
+    "data": { "template": "__ + 7 = 10", "options": [2, 3, 4], "strategy": "make_ten" },
+    "answer": "3",
+    "difficulty": 1
+  },
+  {
+    "id": "ENG-6",
+    "grade": "1",
+    "skillCode": "ENG",
+    "cluster": "Fact practice",
+    "engine": "fact",
+    "question": "Add the facts.",
+    "prompt": "8 + 6",
+    "data": { "expression": "8 + 6", "options": [12, 13, 14, 15], "timed": false },
+    "answer": 14,
+    "difficulty": 1
+  },
+  {
+    "id": "ENG-7",
+    "grade": "1",
+    "skillCode": "ENG",
+    "cluster": "Make a number",
+    "engine": "make_number",
+    "question": "Which pair makes 10?",
+    "prompt": "Find all ways to make 10.",
+    "data": { "target": 10, "choiceMode": "select_pairs", "options": [[6, 4], [7, 3], [5, 6]] },
+    "answer": "6+4",
+    "difficulty": 1
+  },
+  {
+    "id": "ENG-8",
+    "grade": "1",
+    "skillCode": "ENG",
+    "cluster": "Add three",
+    "engine": "add_three",
+    "question": "Add the three numbers.",
+    "prompt": "3 + 4 + 5",
+    "data": { "numbers": [3, 4, 5], "strategy": "make_ten" },
+    "answer": 12,
+    "difficulty": 1
+  },
+  {
+    "id": "ENG-9",
+    "grade": "1",
+    "skillCode": "ENG",
+    "cluster": "Word problem",
+    "engine": "word_problem",
+    "question": "Solve the story problem.",
+    "prompt": "Balloons story",
+    "data": { "story": "Ria has 6 balloons. She gets 3 more. How many balloons now?", "question": "Enter the total." },
+    "answer": 9,
+    "difficulty": 1
+  },
+  {
+    "id": "ENG-10",
+    "grade": "1",
+    "skillCode": "ENG",
+    "cluster": "Word problem + model",
+    "engine": "word_problem_model",
+    "question": "Use the model to solve.",
+    "prompt": "Cubes story",
+    "data": {
+      "story": "Sam builds a train with 4 cubes and adds 2 more.",
+      "model": { "type": "cubes", "trains": [4, 2] },
+      "question": "How many cubes in all?"
+    },
+    "answer": 6,
+    "difficulty": 1
+  },
+  {
+    "id": "ENG-11",
+    "grade": "1",
+    "skillCode": "ENG",
+    "cluster": "Word problem → sentence",
+    "engine": "word_problem_sentence",
+    "question": "Write the number sentence.",
+    "prompt": "Shells story",
+    "data": {
+      "story": "Liam finds 5 shells and then 4 more on the beach.",
+      "template": "__ + __ = __",
+      "options": ["5 + 4 = 9", "4 + 4 = 8"]
+    },
+    "answer": "5 + 4 = 9",
+    "difficulty": 1
+  },
+  {
+    "id": "ENG-12",
+    "grade": "1",
+    "skillCode": "ENG",
+    "cluster": "Fact family",
+    "engine": "fact_family",
+    "question": "Pick a fact family sentence.",
+    "prompt": "Which sentence fits the family?",
+    "data": { "numbers": [3, 5, 8] },
+    "answer": "3 + 5 = 8",
+    "difficulty": 1
+  },
+  {
+    "id": "ENG-13",
+    "grade": "1",
+    "skillCode": "ENG",
+    "cluster": "True or false",
+    "engine": "equation_check",
+    "question": "Choose the sign that makes it true.",
+    "prompt": "Pick the right sign.",
+    "data": { "mode": "choose_sign", "left": "7 __ 3", "right": 10, "options": ["+", "-", "="] },
+    "answer": "+",
+    "difficulty": 1
+  },
+  {
+    "id": "ENG-14",
+    "grade": "1",
+    "skillCode": "ENG",
+    "cluster": "Place value addition",
+    "engine": "place_value_add",
+    "question": "Add with place value.",
+    "prompt": "Add the numbers using place value.",
+    "data": { "mode": "two_digit_vertical", "numbers": [47, 25], "regrouping": true },
+    "answer": 72,
+    "difficulty": 2
+  }
+]

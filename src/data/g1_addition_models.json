@@ -1,0 +1,888 @@
+[
+  {
+    "id": "E.1.1",
+    "grade": "1",
+    "skillCode": "E.1",
+    "cluster": "Add with cubes",
+    "engine": "cubes",
+    "question": "Add the cubes.",
+    "prompt": "3 green cubes plus 2 blue cubes.",
+    "data": {
+      "addends": [
+        3,
+        2
+      ]
+    },
+    "answer": 5,
+    "difficulty": 1
+  },
+  {
+    "id": "E.2.1",
+    "grade": "1",
+    "skillCode": "E.2",
+    "cluster": "Add with pictures",
+    "engine": "picture",
+    "question": "Add with pictures.",
+    "prompt": "How many stars in all?",
+    "data": {
+      "icon": "⭐",
+      "addends": [
+        4,
+        3
+      ]
+    },
+    "answer": 7,
+    "difficulty": 1
+  },
+  {
+    "id": "E.3.1",
+    "grade": "1",
+    "skillCode": "E.3",
+    "cluster": "Which model matches?",
+    "engine": "selection",
+    "question": "Which equation matches the model?",
+    "prompt": "Model shows 2 + 3. Which is correct?",
+    "data": {
+      "options": [
+        "2 + 3 = 5",
+        "2 + 2 = 4",
+        "3 + 3 = 6"
+      ]
+    },
+    "answer": "2 + 3 = 5",
+    "difficulty": 1
+  },
+  {
+    "id": "E.4.1",
+    "grade": "1",
+    "skillCode": "E.4",
+    "cluster": "What does the model show?",
+    "engine": "equation",
+    "question": "Write the addition sentence.",
+    "prompt": "The model shows 5 and 1.",
+    "data": {
+      "equation": "5 + 1 = ?"
+    },
+    "answer": "6",
+    "difficulty": 1
+  },
+  {
+    "id": "E.5.1",
+    "grade": "1",
+    "skillCode": "E.5",
+    "cluster": "Write addition sentences for pictures",
+    "engine": "equation",
+    "question": "Write the addition sentence.",
+    "prompt": "3 apples and 4 apples.",
+    "data": {
+      "equation": "3 + 4 = ?"
+    },
+    "answer": "7",
+    "difficulty": 1
+  },
+  {
+    "id": "E.6.1",
+    "grade": "1",
+    "skillCode": "E.6",
+    "cluster": "Number line addition",
+    "engine": "numberLine",
+    "question": "Use the number line.",
+    "prompt": "Start at 2 and jump 4.",
+    "data": {
+      "start": 2,
+      "jump": 4,
+      "max": 10
+    },
+    "answer": 6,
+    "difficulty": 1
+  },
+  {
+    "id": "E.7.1",
+    "grade": "1",
+    "skillCode": "E.7",
+    "cluster": "Turn words into addition sentence",
+    "engine": "equation",
+    "question": "Write the sentence.",
+    "prompt": "Three plus two equals five.",
+    "data": {
+      "equation": "3 + 2 = ?"
+    },
+    "answer": "5",
+    "difficulty": 1
+  },
+  {
+    "id": "F.1.1",
+    "grade": "1",
+    "skillCode": "F.1",
+    "cluster": "Add in any order",
+    "engine": "equation",
+    "question": "Add in any order.",
+    "prompt": "4 + 1 = 1 + ?",
+    "data": {
+      "equation": "4 + 1 = 1 + ?"
+    },
+    "answer": "4",
+    "difficulty": 1
+  },
+  {
+    "id": "F.2.1",
+    "grade": "1",
+    "skillCode": "F.2",
+    "cluster": "Add by counting on",
+    "engine": "numberLine",
+    "question": "Count on to add.",
+    "prompt": "Start at 5 and count on 2.",
+    "data": {
+      "start": 5,
+      "jump": 2,
+      "max": 10
+    },
+    "answer": 7,
+    "difficulty": 1
+  },
+  {
+    "id": "F.3.1",
+    "grade": "1",
+    "skillCode": "F.3",
+    "cluster": "Make ten with models",
+    "engine": "tenFrame",
+    "question": "Make ten.",
+    "prompt": "8 + ? = 10",
+    "data": {
+      "filled": [
+        8,
+        0
+      ]
+    },
+    "answer": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "F.4.1",
+    "grade": "1",
+    "skillCode": "F.4",
+    "cluster": "Make ten",
+    "engine": "equation",
+    "question": "Complete the sentence.",
+    "prompt": "7 + ? = 10",
+    "data": {
+      "equation": "7 + ? = 10"
+    },
+    "answer": "3",
+    "difficulty": 2
+  },
+  {
+    "id": "G.1.1",
+    "grade": "1",
+    "skillCode": "G.1",
+    "cluster": "Addition facts",
+    "engine": "equation",
+    "question": "Add.",
+    "prompt": "2 + 2 = ?",
+    "data": {
+      "equation": "2 + 2 = ?"
+    },
+    "answer": "4",
+    "difficulty": 1
+  },
+  {
+    "id": "G.2.1",
+    "grade": "1",
+    "skillCode": "G.2",
+    "cluster": "Take apart numbers",
+    "engine": "equation",
+    "question": "Complete the sentence.",
+    "prompt": "5 = 2 + ?",
+    "data": {
+      "equation": "5 = 2 + ?"
+    },
+    "answer": "3",
+    "difficulty": 2
+  },
+  {
+    "id": "G.3.1",
+    "grade": "1",
+    "skillCode": "G.3",
+    "cluster": "Make a number",
+    "engine": "equation",
+    "question": "Make 6.",
+    "prompt": "3 + ? = 6",
+    "data": {
+      "equation": "3 + ? = 6"
+    },
+    "answer": "3",
+    "difficulty": 2
+  },
+  {
+    "id": "G.4.1",
+    "grade": "1",
+    "skillCode": "G.4",
+    "cluster": "Ways to make a number",
+    "engine": "selection",
+    "question": "Which makes 7?",
+    "prompt": "Choose the correct addition.",
+    "data": {
+      "options": [
+        "3 + 4",
+        "2 + 4",
+        "3 + 3"
+      ]
+    },
+    "answer": "3 + 4",
+    "difficulty": 2
+  },
+  {
+    "id": "J.3.1",
+    "grade": "1",
+    "skillCode": "J.3",
+    "cluster": "Relate addition and subtraction",
+    "engine": "equation",
+    "question": "Related facts.",
+    "prompt": "If 3 + 2 = 5, then 5 - 2 = ?",
+    "data": {
+      "equation": "5 - 2 = ?"
+    },
+    "answer": "3",
+    "difficulty": 2
+  },
+  {
+    "id": "M.1.1",
+    "grade": "1",
+    "skillCode": "M.1",
+    "cluster": "Fact families",
+    "engine": "equation",
+    "question": "Complete the fact family.",
+    "prompt": "2 + 3 = 5, 3 + 2 = 5, 5 - 2 = 3, 5 - ? = 2",
+    "data": {
+      "equation": "5 - ? = 2"
+    },
+    "answer": "3",
+    "difficulty": 2
+  },
+  {
+    "id": "M.3.1",
+    "grade": "1",
+    "skillCode": "M.3",
+    "cluster": "Addition and subtraction facts",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "4 + 4 = ?",
+    "data": {
+      "equation": "4 + 4 = ?"
+    },
+    "answer": "8",
+    "difficulty": 1
+  },
+  {
+    "id": "M.4.1",
+    "grade": "1",
+    "skillCode": "M.4",
+    "cluster": "Sort facts",
+    "engine": "selection",
+    "question": "Is this true?",
+    "prompt": "3 + 1 = 4",
+    "data": {
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    "answer": "True",
+    "difficulty": 1
+  },
+  {
+    "id": "P.1.1",
+    "grade": "1",
+    "skillCode": "P.1",
+    "cluster": "Related addition facts",
+    "engine": "equation",
+    "question": "Related facts.",
+    "prompt": "If 6 + 4 = 10, then 4 + 6 = ?",
+    "data": {
+      "equation": "4 + 6 = ?"
+    },
+    "answer": "10",
+    "difficulty": 2
+  },
+  {
+    "id": "P.2.1",
+    "grade": "1",
+    "skillCode": "P.2",
+    "cluster": "Number line to 20",
+    "engine": "numberLine",
+    "question": "Use the number line.",
+    "prompt": "Start at 8 and jump 5.",
+    "data": {
+      "start": 8,
+      "jump": 5,
+      "max": 20
+    },
+    "answer": 13,
+    "difficulty": 2
+  },
+  {
+    "id": "P.3.1",
+    "grade": "1",
+    "skillCode": "P.3",
+    "cluster": "Count on to 20",
+    "engine": "numberLine",
+    "question": "Count on.",
+    "prompt": "12 + 3",
+    "data": {
+      "start": 12,
+      "jump": 3,
+      "max": 20
+    },
+    "answer": 15,
+    "difficulty": 2
+  },
+  {
+    "id": "P.4.1",
+    "grade": "1",
+    "skillCode": "P.4",
+    "cluster": "Add doubles with models",
+    "engine": "cubes",
+    "question": "Add doubles.",
+    "prompt": "4 + 4",
+    "data": {
+      "addends": [
+        4,
+        4
+      ]
+    },
+    "answer": 8,
+    "difficulty": 2
+  },
+  {
+    "id": "P.5.1",
+    "grade": "1",
+    "skillCode": "P.5",
+    "cluster": "Add doubles",
+    "engine": "equation",
+    "question": "Add doubles.",
+    "prompt": "6 + 6 = ?",
+    "data": {
+      "equation": "6 + 6 = ?"
+    },
+    "answer": "12",
+    "difficulty": 2
+  },
+  {
+    "id": "P.6.1",
+    "grade": "1",
+    "skillCode": "P.6",
+    "cluster": "Add doubles - complete",
+    "engine": "equation",
+    "question": "Complete.",
+    "prompt": "5 + ? = 10",
+    "data": {
+      "equation": "5 + ? = 10"
+    },
+    "answer": "5",
+    "difficulty": 2
+  },
+  {
+    "id": "P.7.1",
+    "grade": "1",
+    "skillCode": "P.7",
+    "cluster": "Doubles plus one",
+    "engine": "equation",
+    "question": "Doubles plus one.",
+    "prompt": "5 + 6 = ?",
+    "data": {
+      "equation": "5 + 6 = ?"
+    },
+    "answer": "11",
+    "difficulty": 3
+  },
+  {
+    "id": "P.8.1",
+    "grade": "1",
+    "skillCode": "P.8",
+    "cluster": "Doubles minus one",
+    "engine": "equation",
+    "question": "Doubles minus one.",
+    "prompt": "7 + 6 = ?",
+    "data": {
+      "equation": "7 + 6 = ?"
+    },
+    "answer": "13",
+    "difficulty": 3
+  },
+  {
+    "id": "P.9.1",
+    "grade": "1",
+    "skillCode": "P.9",
+    "cluster": "Near doubles",
+    "engine": "equation",
+    "question": "Add.",
+    "prompt": "6 + 7 = ?",
+    "data": {
+      "equation": "6 + 7 = ?"
+    },
+    "answer": "13",
+    "difficulty": 3
+  },
+  {
+    "id": "P.10.1",
+    "grade": "1",
+    "skillCode": "P.10",
+    "cluster": "Add 3 numbers doubles",
+    "engine": "equation",
+    "question": "Add.",
+    "prompt": "3 + 3 + 4 = ?",
+    "data": {
+      "equation": "3 + 3 + 4 = ?"
+    },
+    "answer": "10",
+    "difficulty": 3
+  },
+  {
+    "id": "P.11.1",
+    "grade": "1",
+    "skillCode": "P.11",
+    "cluster": "Ten frames",
+    "engine": "tenFrame",
+    "question": "Add.",
+    "prompt": "9 + 4",
+    "data": {
+      "filled": [
+        9,
+        4
+      ]
+    },
+    "answer": 13,
+    "difficulty": 2
+  },
+  {
+    "id": "P.12.1",
+    "grade": "1",
+    "skillCode": "P.12",
+    "cluster": "Make ten to add",
+    "engine": "equation",
+    "question": "Make ten.",
+    "prompt": "8 + 5 = 10 + ?",
+    "data": {
+      "equation": "10 + ? = 13"
+    },
+    "answer": "3",
+    "difficulty": 3
+  },
+  {
+    "id": "P.13.1",
+    "grade": "1",
+    "skillCode": "P.13",
+    "cluster": "Add 3 numbers make ten",
+    "engine": "equation",
+    "question": "Add.",
+    "prompt": "8 + 2 + 4 = ?",
+    "data": {
+      "equation": "8 + 2 + 4 = ?"
+    },
+    "answer": "14",
+    "difficulty": 3
+  },
+  {
+    "id": "Q.1.1",
+    "grade": "1",
+    "skillCode": "Q.1",
+    "cluster": "Adding 1",
+    "engine": "equation",
+    "question": "Add.",
+    "prompt": "5 + 1 = ?",
+    "data": {
+      "equation": "5 + 1 = ?"
+    },
+    "answer": "6",
+    "difficulty": 1
+  },
+  {
+    "id": "Q.2.1",
+    "grade": "1",
+    "skillCode": "Q.2",
+    "cluster": "Adding 2",
+    "engine": "equation",
+    "question": "Add.",
+    "prompt": "6 + 2 = ?",
+    "data": {
+      "equation": "6 + 2 = ?"
+    },
+    "answer": "8",
+    "difficulty": 1
+  },
+  {
+    "id": "Q.3.1",
+    "grade": "1",
+    "skillCode": "Q.3",
+    "cluster": "Adding 3",
+    "engine": "equation",
+    "question": "Add.",
+    "prompt": "4 + 3 = ?",
+    "data": {
+      "equation": "4 + 3 = ?"
+    },
+    "answer": "7",
+    "difficulty": 1
+  },
+  {
+    "id": "Q.4.1",
+    "grade": "1",
+    "skillCode": "Q.4",
+    "cluster": "Adding 4",
+    "engine": "equation",
+    "question": "Add.",
+    "prompt": "5 + 4 = ?",
+    "data": {
+      "equation": "5 + 4 = ?"
+    },
+    "answer": "9",
+    "difficulty": 1
+  },
+  {
+    "id": "Q.5.1",
+    "grade": "1",
+    "skillCode": "Q.5",
+    "cluster": "Adding 5",
+    "engine": "equation",
+    "question": "Add.",
+    "prompt": "5 + 5 = ?",
+    "data": {
+      "equation": "5 + 5 = ?"
+    },
+    "answer": "10",
+    "difficulty": 1
+  },
+  {
+    "id": "Q.6.1",
+    "grade": "1",
+    "skillCode": "Q.6",
+    "cluster": "Adding 6",
+    "engine": "equation",
+    "question": "Add.",
+    "prompt": "6 + 6 = ?",
+    "data": {
+      "equation": "6 + 6 = ?"
+    },
+    "answer": "12",
+    "difficulty": 1
+  },
+  {
+    "id": "Q.7.1",
+    "grade": "1",
+    "skillCode": "Q.7",
+    "cluster": "Adding 7",
+    "engine": "equation",
+    "question": "Add.",
+    "prompt": "7 + 7 = ?",
+    "data": {
+      "equation": "7 + 7 = ?"
+    },
+    "answer": "14",
+    "difficulty": 1
+  },
+  {
+    "id": "Q.8.1",
+    "grade": "1",
+    "skillCode": "Q.8",
+    "cluster": "Adding 8",
+    "engine": "equation",
+    "question": "Add.",
+    "prompt": "8 + 8 = ?",
+    "data": {
+      "equation": "8 + 8 = ?"
+    },
+    "answer": "16",
+    "difficulty": 1
+  },
+  {
+    "id": "Q.9.1",
+    "grade": "1",
+    "skillCode": "Q.9",
+    "cluster": "Adding 9",
+    "engine": "equation",
+    "question": "Add.",
+    "prompt": "9 + 9 = ?",
+    "data": {
+      "equation": "9 + 9 = ?"
+    },
+    "answer": "18",
+    "difficulty": 1
+  },
+  {
+    "id": "Q.10.1",
+    "grade": "1",
+    "skillCode": "Q.10",
+    "cluster": "Adding 10",
+    "engine": "equation",
+    "question": "Add.",
+    "prompt": "10 + 5 = ?",
+    "data": {
+      "equation": "10 + 5 = ?"
+    },
+    "answer": "15",
+    "difficulty": 1
+  },
+  {
+    "id": "Q.11.1",
+    "grade": "1",
+    "skillCode": "Q.11",
+    "cluster": "Adding 0",
+    "engine": "equation",
+    "question": "Add.",
+    "prompt": "7 + 0 = ?",
+    "data": {
+      "equation": "7 + 0 = ?"
+    },
+    "answer": "7",
+    "difficulty": 1
+  },
+  {
+    "id": "Q.12.1",
+    "grade": "1",
+    "skillCode": "Q.12",
+    "cluster": "Addition facts to 20",
+    "engine": "equation",
+    "question": "Add.",
+    "prompt": "12 + 5 = ?",
+    "data": {
+      "equation": "12 + 5 = ?"
+    },
+    "answer": "17",
+    "difficulty": 2
+  },
+  {
+    "id": "Q.13.1",
+    "grade": "1",
+    "skillCode": "Q.13",
+    "cluster": "Sort facts",
+    "engine": "selection",
+    "question": "Is this true?",
+    "prompt": "10 + 2 = 12",
+    "data": {
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    "answer": "True",
+    "difficulty": 1
+  },
+  {
+    "id": "Q.14.1",
+    "grade": "1",
+    "skillCode": "Q.14",
+    "cluster": "Make a number",
+    "engine": "equation",
+    "question": "Make 15.",
+    "prompt": "10 + ? = 15",
+    "data": {
+      "equation": "10 + ? = 15"
+    },
+    "answer": "5",
+    "difficulty": 2
+  },
+  {
+    "id": "Q.15.1",
+    "grade": "1",
+    "skillCode": "Q.15",
+    "cluster": "Add 3 numbers",
+    "engine": "equation",
+    "question": "Add.",
+    "prompt": "2 + 3 + 4 = ?",
+    "data": {
+      "equation": "2 + 3 + 4 = ?"
+    },
+    "answer": "9",
+    "difficulty": 2
+  },
+  {
+    "id": "S.2.1",
+    "grade": "1",
+    "skillCode": "S.2",
+    "cluster": "Relate add/sub to 20",
+    "engine": "equation",
+    "question": "Related facts.",
+    "prompt": "15 - 5 = ?",
+    "data": {
+      "equation": "15 - 5 = ?"
+    },
+    "answer": "10",
+    "difficulty": 2
+  },
+  {
+    "id": "V.1.1",
+    "grade": "1",
+    "skillCode": "V.1",
+    "cluster": "Add/Sub facts",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "18 - 6 = ?",
+    "data": {
+      "equation": "18 - 6 = ?"
+    },
+    "answer": "12",
+    "difficulty": 2
+  },
+  {
+    "id": "V.2.1",
+    "grade": "1",
+    "skillCode": "V.2",
+    "cluster": "Ways to make a number",
+    "engine": "selection",
+    "question": "Which equals 12?",
+    "prompt": "Choose correct.",
+    "data": {
+      "options": [
+        "6 + 6",
+        "5 + 5",
+        "10 + 1"
+      ]
+    },
+    "answer": "6 + 6",
+    "difficulty": 2
+  },
+  {
+    "id": "Y.1.1",
+    "grade": "1",
+    "skillCode": "Y.1",
+    "cluster": "Which is true to 10",
+    "engine": "selection",
+    "question": "Which is true?",
+    "prompt": "Choose the true sentence.",
+    "data": {
+      "options": [
+        "2 + 3 = 5",
+        "2 + 2 = 5"
+      ]
+    },
+    "answer": "2 + 3 = 5",
+    "difficulty": 1
+  },
+  {
+    "id": "Y.2.1",
+    "grade": "1",
+    "skillCode": "Y.2",
+    "cluster": "Which sign?",
+    "engine": "selection",
+    "question": "Which sign?",
+    "prompt": "3 ? 2 = 5",
+    "data": {
+      "options": [
+        "+",
+        "-"
+      ]
+    },
+    "answer": "+",
+    "difficulty": 1
+  },
+  {
+    "id": "Y.3.1",
+    "grade": "1",
+    "skillCode": "Y.3",
+    "cluster": "True or False",
+    "engine": "selection",
+    "question": "True or False?",
+    "prompt": "4 + 4 = 8",
+    "data": {
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    "answer": "True",
+    "difficulty": 1
+  },
+  {
+    "id": "Y.4.1",
+    "grade": "1",
+    "skillCode": "Y.4",
+    "cluster": "Which is true",
+    "engine": "selection",
+    "question": "Which is true?",
+    "prompt": "Select the correct one.",
+    "data": {
+      "options": [
+        "5 + 0 = 5",
+        "5 + 1 = 5"
+      ]
+    },
+    "answer": "5 + 0 = 5",
+    "difficulty": 1
+  },
+  {
+    "id": "Y.7.1",
+    "grade": "1",
+    "skillCode": "Y.7",
+    "cluster": "Which is true to 20",
+    "engine": "selection",
+    "question": "Which is true?",
+    "prompt": "Select the correct one.",
+    "data": {
+      "options": [
+        "10 + 5 = 15",
+        "10 + 5 = 14"
+      ]
+    },
+    "answer": "10 + 5 = 15",
+    "difficulty": 2
+  },
+  {
+    "id": "Y.8.1",
+    "grade": "1",
+    "skillCode": "Y.8",
+    "cluster": "Which sign to 20",
+    "engine": "selection",
+    "question": "Which sign?",
+    "prompt": "15 ? 5 = 10",
+    "data": {
+      "options": [
+        "+",
+        "-"
+      ]
+    },
+    "answer": "-",
+    "difficulty": 2
+  },
+  {
+    "id": "Z.1.1",
+    "grade": "1",
+    "skillCode": "Z.1",
+    "cluster": "Complete sentence to 10",
+    "engine": "equation",
+    "question": "Complete.",
+    "prompt": "3 + ? = 8",
+    "data": {
+      "equation": "3 + ? = 8"
+    },
+    "answer": "5",
+    "difficulty": 2
+  },
+  {
+    "id": "Z.3.1",
+    "grade": "1",
+    "skillCode": "Z.3",
+    "cluster": "Complete sentence to 20",
+    "engine": "equation",
+    "question": "Complete.",
+    "prompt": "12 + ? = 18",
+    "data": {
+      "equation": "12 + ? = 18"
+    },
+    "answer": "6",
+    "difficulty": 2
+  },
+  {
+    "id": "Z.5.1",
+    "grade": "1",
+    "skillCode": "Z.5",
+    "cluster": "Complete add/sub",
+    "engine": "equation",
+    "question": "Complete.",
+    "prompt": "15 - ? = 10",
+    "data": {
+      "equation": "15 - ? = 10"
+    },
+    "answer": "5",
+    "difficulty": 2
+  }
+]

@@ -1,0 +1,511 @@
+[
+  {
+    "id": "H.1.1",
+    "grade": "1",
+    "skillCode": "H.1",
+    "cluster": "Word problems with pictures",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "3 ducks and 2 ducks. How many?",
+    "data": {
+      "equation": "3 + 2 = ?"
+    },
+    "answer": "5",
+    "difficulty": 1
+  },
+  {
+    "id": "H.2.1",
+    "grade": "1",
+    "skillCode": "H.2",
+    "cluster": "Write sentences for pictures",
+    "engine": "equation",
+    "question": "Write the sentence.",
+    "prompt": "4 birds and 1 bird.",
+    "data": {
+      "equation": "4 + 1 = ?"
+    },
+    "answer": "5",
+    "difficulty": 1
+  },
+  {
+    "id": "H.3.1",
+    "grade": "1",
+    "skillCode": "H.3",
+    "cluster": "Cube trains word problems",
+    "engine": "cubes",
+    "question": "Use cubes to solve.",
+    "prompt": "Jim has 3 cubes. Pat has 4. Total?",
+    "data": {
+      "addends": [
+        3,
+        4
+      ]
+    },
+    "answer": 7,
+    "difficulty": 1
+  },
+  {
+    "id": "H.4.1",
+    "grade": "1",
+    "skillCode": "H.4",
+    "cluster": "Addition word problems",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "6 cats. 2 more come. How many?",
+    "data": {
+      "equation": "6 + 2 = ?"
+    },
+    "answer": "8",
+    "difficulty": 1
+  },
+  {
+    "id": "H.5.1",
+    "grade": "1",
+    "skillCode": "H.5",
+    "cluster": "Model and write sentences",
+    "engine": "equation",
+    "question": "Write the sentence.",
+    "prompt": "5 dogs. 3 more. Total?",
+    "data": {
+      "equation": "5 + 3 = ?"
+    },
+    "answer": "8",
+    "difficulty": 1
+  },
+  {
+    "id": "H.6.1",
+    "grade": "1",
+    "skillCode": "H.6",
+    "cluster": "Addition sentences for word problems",
+    "engine": "equation",
+    "question": "Write the sentence.",
+    "prompt": "7 fish plus 2 fish.",
+    "data": {
+      "equation": "7 + 2 = ?"
+    },
+    "answer": "9",
+    "difficulty": 1
+  },
+  {
+    "id": "O.1.1",
+    "grade": "1",
+    "skillCode": "O.1",
+    "cluster": "Add/Sub word problems pictures",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "5 apples. Eat 2. How many left?",
+    "data": {
+      "equation": "5 - 2 = ?"
+    },
+    "answer": "3",
+    "difficulty": 1
+  },
+  {
+    "id": "O.2.1",
+    "grade": "1",
+    "skillCode": "O.2",
+    "cluster": "Cube trains add/sub",
+    "engine": "cubes",
+    "question": "Use cubes.",
+    "prompt": "Start with 5. Add 3.",
+    "data": {
+      "addends": [
+        5,
+        3
+      ]
+    },
+    "answer": 8,
+    "difficulty": 1
+  },
+  {
+    "id": "O.3.1",
+    "grade": "1",
+    "skillCode": "O.3",
+    "cluster": "Unknown sums/diffs",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "8 - 3 = ?",
+    "data": {
+      "equation": "8 - 3 = ?"
+    },
+    "answer": "5",
+    "difficulty": 2
+  },
+  {
+    "id": "O.4.1",
+    "grade": "1",
+    "skillCode": "O.4",
+    "cluster": "Add/Sub sentences",
+    "engine": "equation",
+    "question": "Write sentence.",
+    "prompt": "10 take away 4.",
+    "data": {
+      "equation": "10 - 4 = ?"
+    },
+    "answer": "6",
+    "difficulty": 2
+  },
+  {
+    "id": "O.5.1",
+    "grade": "1",
+    "skillCode": "O.5",
+    "cluster": "Change unknown",
+    "engine": "equation",
+    "question": "Find missing number.",
+    "prompt": "5 + ? = 9",
+    "data": {
+      "equation": "5 + ? = 9"
+    },
+    "answer": "4",
+    "difficulty": 2
+  },
+  {
+    "id": "O.6.1",
+    "grade": "1",
+    "skillCode": "O.6",
+    "cluster": "Start unknown",
+    "engine": "equation",
+    "question": "Find start number.",
+    "prompt": "? + 3 = 8",
+    "data": {
+      "equation": "? + 3 = 8"
+    },
+    "answer": "5",
+    "difficulty": 2
+  },
+  {
+    "id": "O.7.1",
+    "grade": "1",
+    "skillCode": "O.7",
+    "cluster": "One addend unknown",
+    "engine": "equation",
+    "question": "Find missing part.",
+    "prompt": "10 - ? = 3",
+    "data": {
+      "equation": "10 - ? = 3"
+    },
+    "answer": "7",
+    "difficulty": 2
+  },
+  {
+    "id": "O.9.1",
+    "grade": "1",
+    "skillCode": "O.9",
+    "cluster": "Word problems add/sub",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "Had 8. Gave 2. Got 3. How many?",
+    "data": {
+      "equation": "8 - 2 + 3 = ?"
+    },
+    "answer": "9",
+    "difficulty": 3
+  },
+  {
+    "id": "O.10.1",
+    "grade": "1",
+    "skillCode": "O.10",
+    "cluster": "Match word problems",
+    "engine": "selection",
+    "question": "Match.",
+    "prompt": "Had 5, got 2 more.",
+    "data": {
+      "options": [
+        "5 + 2",
+        "5 - 2"
+      ]
+    },
+    "answer": "5 + 2",
+    "difficulty": 1
+  },
+  {
+    "id": "R.1.1",
+    "grade": "1",
+    "skillCode": "R.1",
+    "cluster": "Word problems with models to 20",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "12 blocks + 5 blocks.",
+    "data": {
+      "equation": "12 + 5 = ?"
+    },
+    "answer": "17",
+    "difficulty": 2
+  },
+  {
+    "id": "R.2.1",
+    "grade": "1",
+    "skillCode": "R.2",
+    "cluster": "Word problems to 20",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "15 birds. 3 fly away. How many?",
+    "data": {
+      "equation": "15 - 3 = ?"
+    },
+    "answer": "12",
+    "difficulty": 2
+  },
+  {
+    "id": "R.3.1",
+    "grade": "1",
+    "skillCode": "R.3",
+    "cluster": "Sentences for word problems to 20",
+    "engine": "equation",
+    "question": "Write sentence.",
+    "prompt": "10 plus 8.",
+    "data": {
+      "equation": "10 + 8 = ?"
+    },
+    "answer": "18",
+    "difficulty": 2
+  },
+  {
+    "id": "R.4.1",
+    "grade": "1",
+    "skillCode": "R.4",
+    "cluster": "Add 3 numbers word problems",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "5 red, 5 blue, 2 green.",
+    "data": {
+      "equation": "5 + 5 + 2 = ?"
+    },
+    "answer": "12",
+    "difficulty": 2
+  },
+  {
+    "id": "W.4.1",
+    "grade": "1",
+    "skillCode": "W.4",
+    "cluster": "Comparison word problems",
+    "engine": "equation",
+    "question": "Compare.",
+    "prompt": "Ann has 8. Bob has 5. How many more?",
+    "data": {
+      "equation": "8 - 5 = ?"
+    },
+    "answer": "3",
+    "difficulty": 2
+  },
+  {
+    "id": "X.1.1",
+    "grade": "1",
+    "skillCode": "X.1",
+    "cluster": "Sum/Diff unknown",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "12 + 6 = ?",
+    "data": {
+      "equation": "12 + 6 = ?"
+    },
+    "answer": "18",
+    "difficulty": 2
+  },
+  {
+    "id": "X.2.1",
+    "grade": "1",
+    "skillCode": "X.2",
+    "cluster": "Add/Sub sentences",
+    "engine": "equation",
+    "question": "Write sentence.",
+    "prompt": "18 minus 5.",
+    "data": {
+      "equation": "18 - 5 = ?"
+    },
+    "answer": "13",
+    "difficulty": 2
+  },
+  {
+    "id": "X.3.1",
+    "grade": "1",
+    "skillCode": "X.3",
+    "cluster": "Change unknown to 20",
+    "engine": "equation",
+    "question": "Find missing.",
+    "prompt": "12 + ? = 15",
+    "data": {
+      "equation": "12 + ? = 15"
+    },
+    "answer": "3",
+    "difficulty": 2
+  },
+  {
+    "id": "X.4.1",
+    "grade": "1",
+    "skillCode": "X.4",
+    "cluster": "Write sentence change unknown",
+    "engine": "equation",
+    "question": "Write sentence.",
+    "prompt": "15 take away what is 10?",
+    "data": {
+      "equation": "15 - ? = 10"
+    },
+    "answer": "5",
+    "difficulty": 2
+  },
+  {
+    "id": "X.5.1",
+    "grade": "1",
+    "skillCode": "X.5",
+    "cluster": "Start unknown to 20",
+    "engine": "equation",
+    "question": "Find start.",
+    "prompt": "? - 5 = 10",
+    "data": {
+      "equation": "? - 5 = 10"
+    },
+    "answer": "15",
+    "difficulty": 3
+  },
+  {
+    "id": "X.6.1",
+    "grade": "1",
+    "skillCode": "X.6",
+    "cluster": "Write sentence start unknown",
+    "engine": "equation",
+    "question": "Write sentence.",
+    "prompt": "What plus 4 is 16?",
+    "data": {
+      "equation": "? + 4 = 16"
+    },
+    "answer": "12",
+    "difficulty": 3
+  },
+  {
+    "id": "X.7.1",
+    "grade": "1",
+    "skillCode": "X.7",
+    "cluster": "One addend unknown",
+    "engine": "equation",
+    "question": "Find addend.",
+    "prompt": "8 + ? = 19",
+    "data": {
+      "equation": "8 + ? = 19"
+    },
+    "answer": "11",
+    "difficulty": 2
+  },
+  {
+    "id": "X.8.1",
+    "grade": "1",
+    "skillCode": "X.8",
+    "cluster": "Write sentence addend unknown",
+    "engine": "equation",
+    "question": "Write sentence.",
+    "prompt": "12 plus what is 14?",
+    "data": {
+      "equation": "12 + ? = 14"
+    },
+    "answer": "2",
+    "difficulty": 2
+  },
+  {
+    "id": "X.9.1",
+    "grade": "1",
+    "skillCode": "X.9",
+    "cluster": "Both addends unknown",
+    "engine": "selection",
+    "question": "Which pair sums to 10?",
+    "prompt": "Choose pair.",
+    "data": {
+      "options": [
+        "5 + 5",
+        "4 + 5",
+        "6 + 3"
+      ]
+    },
+    "answer": "5 + 5",
+    "difficulty": 2
+  },
+  {
+    "id": "X.10.1",
+    "grade": "1",
+    "skillCode": "X.10",
+    "cluster": "Use models to solve",
+    "engine": "cubes",
+    "question": "Use cubes.",
+    "prompt": "10 cubes + 5 cubes.",
+    "data": {
+      "addends": [
+        10,
+        5
+      ]
+    },
+    "answer": 15,
+    "difficulty": 2
+  },
+  {
+    "id": "X.11.1",
+    "grade": "1",
+    "skillCode": "X.11",
+    "cluster": "Word problems no comparison",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "14 apples. Eat 4.",
+    "data": {
+      "equation": "14 - 4 = ?"
+    },
+    "answer": "10",
+    "difficulty": 2
+  },
+  {
+    "id": "X.12.1",
+    "grade": "1",
+    "skillCode": "X.12",
+    "cluster": "Write sentence no comparison",
+    "engine": "equation",
+    "question": "Write sentence.",
+    "prompt": "11 plus 6.",
+    "data": {
+      "equation": "11 + 6 = ?"
+    },
+    "answer": "17",
+    "difficulty": 2
+  },
+  {
+    "id": "X.13.1",
+    "grade": "1",
+    "skillCode": "X.13",
+    "cluster": "Word problems add/sub mixed",
+    "engine": "equation",
+    "question": "Solve.",
+    "prompt": "10 + 5 - 2 = ?",
+    "data": {
+      "equation": "10 + 5 - 2 = ?"
+    },
+    "answer": "13",
+    "difficulty": 3
+  },
+  {
+    "id": "X.14.1",
+    "grade": "1",
+    "skillCode": "X.14",
+    "cluster": "Write sentence mixed",
+    "engine": "equation",
+    "question": "Write sentence.",
+    "prompt": "20 minus 10.",
+    "data": {
+      "equation": "20 - 10 = ?"
+    },
+    "answer": "10",
+    "difficulty": 2
+  },
+  {
+    "id": "X.15.1",
+    "grade": "1",
+    "skillCode": "X.15",
+    "cluster": "Match word problems",
+    "engine": "selection",
+    "question": "Match.",
+    "prompt": "Had 15, lost 5.",
+    "data": {
+      "options": [
+        "15 - 5",
+        "15 + 5"
+      ]
+    },
+    "answer": "15 - 5",
+    "difficulty": 2
+  }
+]
