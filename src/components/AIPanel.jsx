@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000';
+
 export default function AIPanel({ topic, subtopic, grade }) {
     const [content, setContent] = useState(null);
     const [joke, setJoke] = useState(null);
@@ -44,7 +46,7 @@ export default function AIPanel({ topic, subtopic, grade }) {
         setSaved(false);
 
         try {
-            const res = await fetch('http://localhost:4000/api/ai/generate', {
+            const res = await fetch(`${API_URL}/api/ai/generate`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ topic, subtopic, grade, variant })
@@ -87,7 +89,7 @@ export default function AIPanel({ topic, subtopic, grade }) {
         if (!content || !content.id) return;
 
         try {
-            const res = await fetch(`http://localhost:4000/api/ai/publish/${content.id}`, {
+            const res = await fetch(`${API_URL}/api/ai/publish/${content.id}`, {
                 method: 'POST'
             });
 
@@ -117,7 +119,7 @@ export default function AIPanel({ topic, subtopic, grade }) {
         setSaved(false); // Reset saved state for re-loaded game (or check if public)
 
         try {
-            const res = await fetch(`http://localhost:4000/api/ai/game/${gameId}`);
+            const res = await fetch(`${API_URL}/api/ai/game/${gameId}`);
             const data = await res.json();
 
             if (!res.ok) throw new Error('Failed to load game');

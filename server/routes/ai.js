@@ -189,23 +189,32 @@ Variant: ${variant || 'default'}
 CRITICAL REQUIREMENTS:
 1. Output TWO parts separated by delimiters:
    <<<GAME>>>
-   [Complete HTML for the game]
+   [Complete HTML for the interactive game]
    <<<JOKE>>>
-   [Complete HTML for the interactive joke]
+   [Complete HTML for the math joke]
 
-2. GAME RULES:
+2. GAME RULES (STRICT):
+   - **NOT A QUIZ!** Do NOT create question-answer formats or multiple choice.
+   - Create an **INTERACTIVE GAME** with visual manipulation (clicking, dragging, building).
+   - Think: Clicker Labs, Visual Builders, Interactive Manipulatives, Pattern Makers.
    - Output complete HTML (from <!DOCTYPE html> to </html>)
    - Embed ALL CSS/JS. No external libraries.
+   - **CRITICAL:** Ensure all JavaScript is syntactically valid. Use proper quotes, semicolons, and brackets.
    - Fully mobile-responsive (viewport meta tag, flexbox/grid).
    - Container max-width: 600px.
-   - Touch-friendly buttons (min 44px).
+   - Touch-friendly interactive elements (min 44px).
 
-3. JOKE RULES:
-   - Create a "Math Giggle" card.
-   - It must be a funny joke or cool fact about "${topicLabel}".
+3. GAME TYPES BY TOPIC:
+   **Addition/Subtraction:** Number builders, group clickers, visual counters
+   **Fractions:** Slice builders, fraction bars, pizza cutters, visual fraction matchers
+   **Multiplication:** Array builders, group makers, pattern grids
+   **Geometry:** Shape builders, pattern makers, symmetry creators
+   **Measurement:** Visual rulers, balance scales, estimation games
+   
+4. JOKE RULES:
+   - Create a "Math Giggle" card with a fun fact or joke about "${topicLabel}".
    - Output complete HTML snippet (div with styles).
-   - Use inline styles or embedded <style> scoped to the div.
-   - Make it interactive (e.g., click to reveal punchline, hover to animate).
+   - Make it interactive (click to reveal, hover to animate).
    - Use emojis and bright colors.
    - Keep it small and embeddable.
 
@@ -219,22 +228,28 @@ RESPONSIVENESS & LAYOUT RULES (STRICT):
 - Font sizes must scale or be readable on small screens (use rem or viewport units).
 - Prevent horizontal scrolling.
 
-DESIGN REQUIREMENTS:
-- Create a unique, playful story/theme related to "${topicLabel}"
-- Design custom cartoon characters or creatures (use emojis and CSS)
-- Use vibrant gradient backgrounds
-- Large, colorful, friendly buttons
-- Smooth animations and transitions
-- Progress indicators or counters
-- Celebratory messages when goals are reached
+DESIGN REQUIREMENTS (GAME-FOCUSED):
+- Create a **VISUAL, INTERACTIVE GAME** (NOT a quiz or question-answer format).
+- Examples of good game mechanics:
+  * **Clicker/Builder:** Click to add/remove objects, build groups, create patterns
+  * **Drag-and-Drop:** Drag items to categories, sort, match, arrange
+  * **Visual Manipulative:** Slice fractions, adjust number lines, build shapes
+  * **Pattern Maker:** Click tiles to create patterns, symmetry, designs
+- Use **large, touchable elements** (circles, squares, visual objects)
+- Provide **instant visual feedback** (animations, color changes, sounds)
+- Include a **clear goal** ("Build 5 groups of 3" or "Match all pairs")
+- Show **progress visually** (progress bars, counters, visual completion)
+- Celebrate success with **animations and confetti** 🎉
+- Use vibrant gradient backgrounds and playful characters
 - Make numbers appropriate for grade ${grade}
 
-INTERACTION REQUIREMENTS:
-- Multiple interactive buttons or controls
-- Visual feedback on clicks/interactions
-- Clear goal or target to achieve
-- Success state with celebration
-- Keep it simple but engaging
+INTERACTION REQUIREMENTS (GAME-BASED):
+- **Click-to-interact:** Large buttons, draggable objects, clickable zones
+- **Visual manipulation:** See results immediately (objects appear, move, change)
+- **Clear goal:** Display target clearly ("Build 2 × 5 = 10" or "Slice into 4 equal parts")
+- **Progress tracking:** Show score, completion status, or visual progress
+- **Success celebration:** Big "YOU DID IT!" with animations when goal is reached
+- **Reset/Retry:** Allow starting over or trying a new challenge
 
 STYLE INSPIRATION & CSS RULES (STRICT):
 - **Theme:** "3D Cartoon" aesthetic. Everything should look tactile and chunky.
@@ -254,10 +269,12 @@ STYLE INSPIRATION & CSS RULES (STRICT):
   - Success messages should be big overlays with confetti-like colors.
 
 EXAMPLE THEMES (be creative, don't copy):
-- "Jelly Bean Counter" - 3D jelly beans that squish when clicked
-- "Blocky Builder" - Minecraft-style blocks for area/perimeter
-- "Space Button Dash" - High-tech control panel with chunky buttons
-- "Gummy Bear Fractions" - Splitting gummy bears (kindly!)
+- "Group Builder Lab" - Click circles to build equal groups (like IXL Clicker Lab)
+- "Pizza Fraction Slicer" - Click to slice pizza into equal parts, drag toppings
+- "Pattern Block Studio" - Click tiles to create symmetrical patterns
+- "Number Line Jumper" - Click arrows to jump along a number line to target
+- "Array Constructor" - Build multiplication arrays by clicking grid cells
+- "Balance Scale Game" - Drag weights to balance an equation
 
 Keep the math simple and age-appropriate. Make it feel like a mini-game, not a worksheet!
 

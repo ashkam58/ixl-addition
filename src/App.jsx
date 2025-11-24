@@ -7,6 +7,8 @@ import LoginModal from "./components/LoginModal.jsx";
 import { skills as mathSkills } from "./data/skillsConfig.js";
 import AIPanel from "./components/AIPanel.jsx";
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000';
+
 const subjects = [
   { id: "math", label: "Math" },
   { id: "ela", label: "English Language Arts" },
@@ -266,7 +268,7 @@ export default function App() {
       // Persist to backend
       const uid = localStorage.getItem("additionLabUserId");
       if (uid) {
-        fetch(`http://localhost:4000/api/users/${uid}/subscribe`, {
+        fetch(`${API_URL}/api/users/${uid}/subscribe`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ plan: "pro" }),
@@ -341,7 +343,7 @@ export default function App() {
 
     try {
       const res = await fetch(
-        `http://localhost:4000/api/users/${userId}/subscribe`,
+        `${API_URL}/api/users/${userId}/subscribe`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -362,7 +364,7 @@ export default function App() {
 
   const handleLogin = async (email, password) => {
     try {
-      const res = await fetch("http://localhost:4000/api/auth/login", {
+      const res = await fetch(`${API_URL}/api/auth/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
@@ -394,7 +396,7 @@ export default function App() {
 
   const handleSignup = async (name, email, password) => {
     try {
-      const res = await fetch("http://localhost:4000/api/auth/signup", {
+      const res = await fetch(`${API_URL}/api/auth/signup`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, password }),
